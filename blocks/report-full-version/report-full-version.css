@@ -1,0 +1,44 @@
+.report-full-version {
+  border: 1px solid green;
+}
+
+.report-full-version__content {
+  display: flex;
+  padding: 30px 0;
+  gap: 30px;
+}
+
+.report-full-version__title {
+  font-family: 'Formular';
+  font-size: 28px;
+}
+
+.bg-color-blue {
+  background-color: #DEE4FF;
+}
+
+.report-full-version__col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.report-btn {
+  display: block;
+  padding: 25px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #304EFF;
+  text-align: center;
+}
+
+.report-list {
+  margin: 0;
+}
+
+.report-list li {
+  font-size: 20px;
+  line-height: 30px;
+}

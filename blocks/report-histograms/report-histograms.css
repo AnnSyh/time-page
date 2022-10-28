@@ -1,0 +1,42 @@
+.report-histograms {
+  display: flex
+}
+.report-histograms__col {
+  width: 50%;
+}
+.text-small-bold {
+  font-size: 20px;
+  font-family: 'Formular-Bold', sans-serif;
+}
+
+.report-histograms__img{
+  margin: 20px 0;
+}
+
+.arrow-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.arrow-top::after {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url('../../images/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.arrow-top__visible {
+  z-index: 100;
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}

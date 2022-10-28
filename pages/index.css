@@ -1,0 +1,11 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/__header/page__header.css);
+
+@import url(../blocks/container/container.css);
+@import url(../blocks/report-full-version/report-full-version.css);
+@import url(../blocks/first-screen/first-screen.css);
+@import url(../blocks/quote/quote.css);
+@import url(../blocks/report-histograms/report-histograms.css);

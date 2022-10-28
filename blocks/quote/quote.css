@@ -1,0 +1,24 @@
+.quote {
+  font-family: 'Formular-Light';
+  color: #304EFF;
+  font-size: 43px;
+  position: relative;
+  padding-left: 185px;
+  padding-top: 50px;
+}
+
+.quote::after {
+  content: '';
+  width: 154px;
+  height: 136px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../../images/quote.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-bold {
+  font-family: 'Formular-Bold', sans-serif;
+}
