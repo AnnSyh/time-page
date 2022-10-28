@@ -9,34 +9,45 @@
   height: 100vh;
   justify-content: space-evenly;
 }
+
 .first-screen__year {
   font-family: 'Formular-Light';
   font-size: 40px;
   text-transform: uppercase;
 }
+
 .first-screen__text {
   font-family: 'Formular';
   font-size: 16px;
   text-transform: uppercase;
 }
+
 .first-screen__title-first {
   font-family: 'Formular-Light';
   font-size: 90px;
   text-transform: uppercase;
 }
+
 .first-screen__title-second {
   margin: 0;
   font-weight: 400;
   font-family: 'Formular-Light';
   font-size: 80px;
   text-transform: uppercase;
+  background-color: #304EFF;
 }
+
+.first-screen__logo {
+  max-width: 180px;
+}
+
 .first-screen__letters {
   color: #000;
   font-family: 'Formular-Bold';
   font-size: 50px;
   text-transform: uppercase;
 }
+
 .first-screen__link {
   font-family: 'Formular';
   font-size: 16px;
@@ -47,13 +58,14 @@
   display: block;
   min-height: 60px;
 }
+
 .first-screen__link::after {
   content: '';
   width: 100px;
   height: 50px;
-  background-image: url('../../images/arrow-bottom.jpg');
+  background-image: url('../../images/Arrow.svg');
   background-repeat: no-repeat;
   position: absolute;
-  top: 20px;
+  top: 35px;
   left: calc(50% - 50px);
 }

@@ -5,6 +5,7 @@
     min-width: 320px;
     margin: 0 auto;
     color: #2A2C2F;
+    overflow-x: hidden;
 }
 
 .report__sub-title {

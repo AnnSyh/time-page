@@ -16,6 +16,15 @@
 .bg-color-blue {
   background-color: #DEE4FF;
 }
+.bg-color-gray {
+  background-color: #F0F0F2;
+}
+.bg-color-green {
+  background-color: #04DC73;
+}
+.bg-color-dark-blue {
+  background-color: #304EFF;
+}
 
 .report-full-version__col-1 {
   display: flex;

@@ -1,0 +1,15 @@
+.report-counter {
+  background: #cccccc;
+}
+.report-counter__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 115px;
+  padding-bottom: 30px;
+}
+
+.report-counter__inner > * {
+  flex: 1;
+  align-items: center;
+}

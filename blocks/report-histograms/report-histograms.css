@@ -1,8 +1,12 @@
 .report-histograms {
-  display: flex
+  display: flex;
+  gap: 30px;
 }
 .report-histograms__col {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .text-small-bold {
   font-size: 20px;
@@ -11,6 +15,7 @@
 
 .report-histograms__img{
   margin: 20px 0;
+  margin-top: auto;
 }
 
 .arrow-top {
@@ -39,4 +44,41 @@
   opacity: 1;
   transition: all 1.5s;
   transform: translateY(0%);
+}
+
+small {
+  font-size: 13px;
+  color:#758585;
+  display: block;
+}
+
+.report-top-line {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* .bg-light-blue {
+  background-color: #D6DCFF;
+}
+.bg-blue {
+  background-color: #A9BAFF;
+}
+.bg-dark-blue {
+  background-color: #8196FF;
+} */
+.bg-light-blue {
+  background-color: #7F94FF;
+}
+.bg-blue {
+  background-color: #5571FF;
+}
+.bg-dark-blue {
+  background-color: #2A4DDF;
+}
+.bg-light-blue,
+.bg-blue,
+.bg-dark-blue {
+ /* display: none; */
 }
