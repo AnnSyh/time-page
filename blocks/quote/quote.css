@@ -22,3 +22,17 @@
 .text-bold {
   font-family: 'Formular-Bold', sans-serif;
 }
+
+@media screen and (max-width:768px) {
+
+  .quote {
+    padding-left: 60px;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .quote::after {
+    width: 60px;
+    height: 60px;
+  }
+}

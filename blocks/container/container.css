@@ -1,6 +1,13 @@
 .container {
-    border: 1px solid red;
     max-width: 984px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        margin: 0 30px;
+    }
+
 }

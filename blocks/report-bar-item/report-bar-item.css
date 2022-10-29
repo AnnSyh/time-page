@@ -22,3 +22,10 @@
   padding: 0 10px;
   font-size: 30px;
 }
+
+@media screen and (max-width:768px) {
+  .report-bar-item {
+    flex-direction: column;
+    gap: 10px;
+  } 
+}

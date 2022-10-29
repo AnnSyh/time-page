@@ -1,7 +1,3 @@
-.new-vector {
-
-}
-
 .new-vector__title-second {
   margin: 0;
   font-weight: 400;
@@ -15,6 +11,11 @@
   color:#304EFF;
 }
 
-/* starting point
-new-vector
-cultural-code */
+@media screen and (max-width:768px) {
+  .new-vector__title-second {
+    top: auto;
+    height: auto;
+    font-size: 35px;
+  }
+
+}

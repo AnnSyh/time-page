@@ -20,4 +20,6 @@
 
 @import url(../blocks/report-row/report-row.css);
 @import url(../blocks/text-center/text-center.css);
+@import url(../blocks/page-header-fixed/page-header-fixed.css);
+@import url(../blocks/page-nav/page-nav.css);
 
