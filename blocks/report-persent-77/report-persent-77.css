@@ -8,6 +8,8 @@
 
 .report-persent-77 {
   font-size: 200px;
+  white-space: nowrap;
+  min-width: 300px;
 }
 
 .report-persent-text {
@@ -20,5 +22,3 @@
   font-size: 15px;
   margin-top: 30px;
 }
-
-

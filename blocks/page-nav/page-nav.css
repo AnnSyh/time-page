@@ -13,7 +13,15 @@
 }
 
 .page-nav a.active {
+  background-color: #2A4DDF;
   display: flex;
   text-decoration: none;
   cursor: auto;
+}
+
+.page-nav a.active-prev {
+  display: flex;
+  text-decoration: none;
+  cursor: auto;
+  /* top: 100px; */
 }
