@@ -111,3 +111,48 @@ small {
     margin-bottom: 0px;
   }
 }
+
+/* //  test-diagrams */
+
+  @keyframes render {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .canvas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+  }
+  
+
+  .chart {
+    min-width: 500px;
+  }
+  
+  .unit {
+    fill: none;
+    stroke-width: 0.5;
+    cursor: pointer;
+    
+    animation-name: render;
+    animation-duration: 1.5s;
+    transition-property: all; 
+    transition-duration: 1.5s;
+  }
+  
+  
+  .unit:nth-child(1) {
+    stroke: #E627FE;
+    stroke-dasharray:  100 0;
+     stroke-dashoffset: 25;
+  }
+  
+  .unit:nth-child(2) {
+    stroke: #2A4EFE;
+    stroke-dasharray: 50 50;
+    stroke-dashoffset: 25;
+  }
+  

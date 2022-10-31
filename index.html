@@ -40,14 +40,8 @@
         <div class='first-screen__letters'>
 
           <svg class="fade-in">
-            <text class="txtTitle"
-                  text-anchor="middle"
-                  x="50%"
-                  y="50%"
-                  dy="50px"
-                  class="text"
-                  >
-                H:P:A
+            <text class="txtTitle" text-anchor="middle" x="50%" y="50%" dy="50px" class="text">
+              H:P:A
             </text>
           </svg>
 
@@ -266,8 +260,12 @@
               Изменение в&nbsp;FMCG-потреблении
               в&nbsp;2022 году по&nbsp;сравнению
               с&nbsp;аналогичным периодом прошлого
-              года, %&nbsp;опрошенных
+              года, %&nbsp;опрошенных 
             </div>
+            
+            <canvas id="income" width="auto" height="400" style="width: auto; height: 400px;"></canvas>
+
+
             <img class="report-histograms__img" src='images/gr-3.svg' alt='' />
             <small>Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
             <p class='pr-sm-60px'>
@@ -289,6 +287,17 @@
             <small>Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
           </div>
           <div class='report-histograms__col'>
+
+            <div class="test-diagrams">
+
+              <div class="canvas">  
+                <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+                  <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              </div>
+
+            </div>
+
             <div class='text-small-bold'>
               Покупали&nbsp;ли вы&nbsp;за&nbsp;последние 30&nbsp;дней
               товары тех производителей, о&nbsp;которых
@@ -494,18 +503,39 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
-      new WOW().init();
+    new WOW().init();
   </script>
 
-  <script src="./js/script.js"></script>
   <script src='./js/parallax.js'></script>
+  <script src='./js/Chart.min.js'></script>
+  <script src="./js/script.js"></script>
+  <!-- labels : ["Сильно отличается","Отличается, но не значительно","Практически ничего не изменилось"], -->
   <script>
     $(document, window).SnakeParallax(
       {
-      backgroundPosition: "center top",
-      backgroundImage: "url('./images/1-R.svg')"
-    }
+        backgroundPosition: "center top",
+        backgroundImage: "url('./images/1-R.svg')"
+      }
     );
+
+    var income = document.getElementById("income").getContext("2d");
+    var barData = {
+        labels : ["","",""],
+        datasets : [
+            {
+                fillColor : "blue",
+                strokeColor : "blue",
+                data : [25,56,19]
+            },
+            {
+                fillColor : "green",
+                strokeColor : "green",
+                data : [24,50,25]
+            }
+
+        ]
+    }
+   new Chart(income).Bar(barData);
   </script>
 
 </body>

@@ -144,7 +144,7 @@
   }
 }
 
-svg {
+.first-screen__letters svg {
   animation: fadeIn 1s ease-in infinite alternate;
  
 }
