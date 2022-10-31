@@ -135,12 +135,10 @@ window.onload = function () {
     });
   }
 
-  // window.addEventListener("scroll", navHighlighter);
+  window.addEventListener("scroll", navHighlighter);
 
   // //Parallax
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   initializeParallax(document.querySelector('.viewport'));
-  // });
+
 
 
 }
