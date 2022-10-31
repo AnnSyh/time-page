@@ -1,66 +1,47 @@
-/*! Copyright (c) 2016 THE ULTRASOFT (http://theultrasoft.com)
- * Licensed under the MIT License (LICENSE.txt).
- *
- * Project: Parallaxie
- * Version: 0.5
- *
- * Requires: jQuery 1.9+
- */
+$.fn.SnakeParallax = function (a) {
+  // console.log('a = ',a);
+  this.ready(function () {
+    $('[snake-parallax="hero"]').css({
+      "background-repeat": "no-repeat",
+      "background-size": "cover",
+      "background-color": "#fff",
+      overflow: "hidden",
+      width: "100%",
+      height: "100vh",
+      position: "relative"
+    });
+    $('[snake-parallax="hero-1"]').css({
+      "background-repeat": "no-repeat",
+      "background-size": "cover",
+      "background-color": "#fff",
+      overflow: "hidden",
+      width: "100%",
+      height: "100vh",
+      position: "relative"
+    });
+    var e = $.extend({ backgroundPosition: "center top", backgroundImage: "" }, a);
+    return (
+      $('[snake-parallax="hero"]').css({
+        backgroundPosition: e.backgroundPosition,
+        backgroundImage: e.backgroundImage
+      }),
+      $('[snake-parallax="hero-1"]').css({
+        backgroundPosition: e.backgroundPosition,
+        backgroundImage: e.backgroundImage
+      })
+    )
+  }),
+    this.scroll(function () {
+      var a = $(document).scrollTop().valueOf() / 1.5;
 
-(function( $ ){
+      // console.log(' Math.round(a)  = ', Math.round(a) );
 
-  $.fn.parallaxie = function( options ){
-
-      options = $.extend({
-          speed: 0.2,
-          repeat: 'no-repeat',
-          size: 'cover',
-          pos_x: 'center',
-          offset: 0,
-      }, options );
-
-      this.each(function(){
-
-          var $el = $(this);
-          var local_options = $el.data('parallaxie');
-          if( typeof local_options !== 'object' ) local_options = {};
-          local_options = $.extend( {}, options, local_options );
-
-          var image_url = $el.data('image');
-          if( typeof image_url === 'undefined' ){
-              image_url = $el.css('background-image');
-              if( !image_url ) return;
-
-              // APPLY DEFAULT CSS
-              var pos_y =  local_options.offset + ($el.offset().top - $(window).scrollTop()) * (1 - local_options.speed );
-              $el.css({
-                  'background-image': image_url,
-                  'background-size': local_options.size,
-                  'background-repeat': local_options.repeat,
-                  'background-attachment': 'fixed',
-                  'background-position': local_options.pos_x + ' ' + pos_y + 'px',
-              });
-
-
-              // Call by default for the first time on initialization.
-              parallax_scroll( $el, local_options );
-
-              // Call by whenever the scroll event occurs.
-              $(window).scroll( function(){
-                  parallax_scroll( $el, local_options );
-              });
-
-          }
-      });
-
-      return this;
-  };
-
-
-  function parallax_scroll( $el, local_options ){
-      var pos_y =  local_options.offset + ($el.offset().top - $(window).scrollTop()) * (1 - local_options.speed );
-      $el.data( 'pos_y', pos_y );
-      $el.css( 'background-position', local_options.pos_x + ' ' + pos_y + 'px' );
-  }
-
-}( jQuery ));
+      $('[snake-parallax="hero"]').css({
+        // minHeight: "405px", 
+        height: "calc(120vh - " + Math.round(a) + "px)"
+      })
+      $('[snake-parallax="hero-1"]').css({
+        height: "calc(120vh - " + Math.round(a) + "px)"
+      })
+    })
+};
