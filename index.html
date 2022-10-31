@@ -6,6 +6,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <title>ИНДУСТРИАЛЬНЫЙ ОТЧЕТ - SlideNav</title>
 
 </head>
@@ -37,22 +38,57 @@
         <div class='first-screen__title-first'>Время</div>
         <!-- <div class='first-screen__letters'>Н:P:A</div> -->
         <div class='first-screen__letters'>
-          <img class='first-screen__logo' src="./images/Logo.svg" alt="Logo" />
+
+          <svg class="fade-in">
+            <text class="txtTitle"
+                  text-anchor="middle"
+                  x="50%"
+                  y="50%"
+                  dy="50px"
+                  class="text"
+                  >
+                H:P:A
+            </text>
+          </svg>
+
+          <!-- <img class='first-screen__logo' src="./images/Logo.svg" alt="Logo" /> -->
         </div>
         <a class='first-screen__link' href='#'>СМОТРЕТЬ ОТЧЕТ</a>
       </div>
 
     </section>
 
+    <!-- <section class='test-animation'>
+      <div class="row row-1">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row row-2">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row row-3">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </section> -->
+
     <section id="section2" class="section">
 
+
       <div class='second-screen'>
-        <div class="hero-section" snake-parallax="hero">
+        <!-- <div class="hero-section" snake-parallax="hero">
           <div class="hero-wrapper">
             <div class="hero-overlay"></div>
           </div>
-        </div>
-        <!-- <img src='./images/1-R.svg' alt='' class='first-screen__img' /> -->
+        </div> -->
+        <img src='./images/1-R.svg' alt='' class='first-screen__img' />
         <h2 class='first-screen__title-second'>РЫНОК: ТОЧКА ОТСЧЕТА</h2>
       </div>
 
@@ -455,6 +491,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link href='./pages/index.css' rel='stylesheet'>
   <script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
+
   <script src="./js/script.js"></script>
   <script src='./js/parallax.js'></script>
   <script>

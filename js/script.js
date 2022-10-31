@@ -139,7 +139,23 @@ window.onload = function () {
 
   // //Parallax
 
+  // make any elements animated by class
+  $(".row-1 .col").addClass("wow animate__fadeInUp");
+  $(".row-2 .col").addClass("wow animate__zoomIn");
+  $(".row-3 .col").addClass("wow animate__fadeInRight");
 
+  $(".first-screen__img").addClass("wow animate__fadeInUp");
+
+  //1-ый экран
+  $(".first-screen__title-first").addClass("wow animate__fadeInDown");
+  $(".first-screen__report-data.container").addClass("wow animate__fadeInDown");
+  $(".first-screen__link").addClass("wow animate__fadeInUp");
+
+  // activate wow.js
+  wow = new WOW({
+    animateClass: "animate__animated"
+  });
+  wow.init();
 
 }
 
