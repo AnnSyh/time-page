@@ -8,6 +8,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>ИНДУСТРИАЛЬНЫЙ ОТЧЕТ - SlideNav</title>
 
+  <style>
+    [data-paroller-factor] {
+      position: relative;
+      z-index: 0;
+    }
+
+    .jumbotron-1 {
+      background: hsla(0, 0%, 100%, .05);
+      padding: 0;
+      margin: 0;
+      min-height: 340px;
+      min-width: 100%;
+    }
+
+    @media screen and (max-width:480px) {
+      .jumbotron-1 { 
+        border: 1px solid red;
+        min-height: 125px;
+      }
+    }
+    @media screen and (min-width:480px) and (max-width:768px) {
+      .jumbotron-1 
+      {border: 1px solid green;
+        min-height: 250px;
+      }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) {
+      .jumbotron-1 {
+        border: 1px solid blue;
+        min-height: 330px;
+      }
+    }
+    @media screen and (min-width:991px) and (max-width:1200px) {
+      .jumbotron-1 {
+        border: 1px solid brown;
+        min-height: 404px;
+      }
+    }
+    @media screen and (min-width:1200px) {
+      .jumbotron-1 {
+        border: 1px solid violet;
+        min-height: 506px;
+      }
+    }
+
+
+    .jumbotron-2 {
+      background: hsla(0, 0%, 100%, .05);
+      padding: 0;
+      margin: 0;
+      min-height: 400px;
+      min-width: 100%;
+    }
+    
+    .jumbotron-3 {
+      background: hsla(0, 0%, 100%, .05);
+      padding: 0;
+      margin: 0;
+      min-height: 400px;
+      min-width: 100%;
+    }
+  </style>
+
 </head>
 
 <body class="page">
@@ -48,21 +111,10 @@
 
       <div class='second-screen'>
 
-        <div class="parallaxie heading-container" style="background: url('./images/1-R.svg')">
-          <div class="heading">
-              <h1>Parallaxie</h1>
-              <div class="description">Easiest, Responsive and Customizable Parallax jQuery Plugin</div>
-              <a rel="nofollow" href="https://github.com/TheUltrasoft/Parallaxie/archive/master.zip" class="btn"><i class="fa fa-download"></i> Download Plugin</a>
-          </div>
-      </div>
-  
-  
-      <div id="main_bg" class="parallaxie">
-          <div id="shoe-01" class="parallaxie" data-parallaxie='{"size": "auto", "pos_x":"20%", "speed":-0.3, "offset":100}'></div>
-          <div id="shoe-02" class="parallaxie" data-parallaxie='{"size": "auto", "pos_x":"70%", "speed":0.4, "offset":0}'></div>
-      </div>
-
-        <!-- <img src='./images/1-R.svg' alt='' class='first-screen__img' /> -->
+        <div class="jumbotron-1" style="background: url('./images/1-R.svg') no-repeat center; background-size: cover;"
+          data-paroller-factor="-0.15" data-paroller-direction="horizontal">
+        </div>
+        <img src='./images/1-R.svg' alt='' class='first-screen__img' />
         <h2 class='first-screen__title-second'>РЫНОК: ТОЧКА ОТСЧЕТА</h2>
       </div>
 
@@ -173,10 +225,9 @@
     </section>
     <section id="section3" class="section">
 
-      <div class="hero-section" snake-parallax="hero-1">
-        <div class="hero-wrapper">
-          <div class="hero-overlay"></div>
-        </div>
+      <div class="jumbotron-2" style="
+      background: url('./images/2-R.svg') repeat bottom; 
+      background-size: cover;" data-paroller-factor="0.3" data-paroller-direction="horizontal">
       </div>
 
       <div style='display: grid;'>
@@ -323,7 +374,12 @@
     </section>
     <section id="section4" class="section">
 
-      <div class='second-screen'>
+      <div class='second-screen' style=' background-color: #304EFF;'>
+
+        <div class="jumbotron-3" style="background: url('./images/3-R.svg') no-repeat center; background-size: cover;"
+          data-paroller-factor="-0.15" data-paroller-direction="horizontal">
+        </div>
+
         <img src='./images/3-R.svg' alt='' class='first-screen__img' />
         <h2 class='first-screen__title-second'>ТВ&nbsp;&mdash; КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</h2>
       </div>
@@ -465,13 +521,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link href='./pages/index.css' rel='stylesheet'>
   <script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
+  <script src='./js/jquery.paroller.js'></script>
   <script src="./js/script.js"></script>
-
-  <script src='./js/parallax.js'></script>
   <script>
-    $('.heading').height( $(window).height() );
-    $('.parallaxie').parallaxie();
-</script>
+    $('.jumbotron-1').paroller({
+      factor: 0.3,            // multiplier for scrolling speed and offset
+      factorXs: 0.1,          // multiplier for scrolling speed and offset if window width is <576px
+      factorSm: 0.2,          // multiplier for scrolling speed and offset if window width is <=768px
+      factorMd: 0.2,          // multiplier for scrolling speed and offset if window width is <=1024px
+      factorLg: 0.3,          // multiplier for scrolling speed and offset if window width is <=1200px
+      type: 'foreground',     // background, foreground
+      direction: 'horizontal', // vertical, horizontal
+      transition: 'transform 0.1s ease' // CSS transition, added on elements where type:'foreground'
+    });
+    $('.jumbotron-2').paroller();
+    $('.jumbotron-3').paroller();
+
+
+  </script>
 
 </body>
 
