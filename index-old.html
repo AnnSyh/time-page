@@ -1,418 +1,477 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html style='overflow-x: hidden;'>
 
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link href='./pages/index.css' rel='stylesheet'>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src='./js/script.js'></script>
-  <title>ИНДУСТРИАЛЬНЫЙ ОТЧЕТ</title>
+  <title>ИНДУСТРИАЛЬНЫЙ ОТЧЕТ - SlideNav</title>
+
 </head>
 
-<body class='page'>
-  <span id='top'></span>
+<body class="page">
+  <div class="viewport">
 
-  <section class='first-screen'>
-    <div class='first-screen__report-data container'>
-      <div class='first-screen__year'>2021—2022</div>
-      <div class='first-screen__text'>ИНДУСТРИАЛЬНЫЙ ОТЧЕТ</div>
-    </div>
-    <div class='first-screen__title-first'>Время</div>
-    <!-- <div class='first-screen__letters'>Н:P:A</div> -->
-    <div class='first-screen__letters'>
-      <img class='first-screen__logo' src="./images/Logo.svg" alt="Logo" />
-    </div>
-    <a class='first-screen__link' href='#'>СМОТРЕТЬ ОТЧЕТ</a>
-  </section>
-
-  <section class='second-screen' id='starting-point'>
-    <img src='./images/1-R.svg' alt='' class='first-screen__img' />
-    <h2 class='first-screen__title-second'>РЫНОК: ТОЧКА ОТСЧЕТА</h2>
-  </section>
-  <section class='report-full-version bg-color-blue'>
-    <div class='report-full-version__content container'>
-      <div class='report-full-version__col-1'>
-        <div class='report-full-version__title'>Читайте в полной версии отчета</div>
-        <a href='./download/NRA-AR-2022-site.pdf' download class='report-btn'>Скачать PDF</a>
-      </div>
-      <div class='report-full-version__col-2'>
-        <ul class='report-list'>
-          <li>Рынок 2021: под знаком восстановительного роста</li>
-          <li>1 полугодие 2022 — новая точка отсчета</li>
-          <li>Вслед за корректировкой спроса меняется и ландшафт ТВ-рекламодателей</li>
-          <li>Отечественные рекламодатели: рост ускоряется</li>
-          <li>Доля performance растет</li>
-          <li>Новые рекламодатели тестируют ТВ</li>
-          <li>Структура бюджетов: рост доли средних и небольших игроков</li>
-        </ul>
+    <span id='top'></span>
+    <div class="nav navigation">
+      <nav class='page-nav page-header-fixed'>
+        <a class='report-top-line report-top-line--section1' href="#section1">Link to section 1</a>
+        <a class='report-top-line report-top-line--section2' href="#section2">РЫНОК: ТОЧКА ОТСЧЕТА</a>
+        <a class='report-top-line report-top-line--section3' href="#section3">ПОТРЕБИТЕЛИ: НОВЫЙ ВЕКТОР</a>
+        <a class='report-top-line report-top-line--section4' href="#section4">ТВ — КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</a>
+      </nav>
+      <div class='d-none report-top-line report-top-line--starting-point  bg-light-blue'> РЫНОК: ТОЧКА ОТСЧЕТА </div>
+      <div class='d-none report-top-line report-top-line--new-vector      bg-blue'> ПОТРЕБИТЕЛИ: НОВЫЙ ВЕКТОР </div>
+      <div class='d-none report-top-line report-top-line--cultural-code   bg-dark-blue'> ТВ — КУЛЬТУРНЫЙ КОД
+        СОВРЕМЕННОСТИ
       </div>
     </div>
-  </section>
+    <section id="section1" class="section">
 
-  <section class='container'>
-    <p>
-      2021 год стал одним из самых успешных в истории российского
-      медиарекламного рынка. После полного неопределенности
-      2020-го индустрия перешла к интенсивному восстановительному
-      росту.
-    </p>
-    <blockquote class='quote'>
-      2021 — год восстановления после
-      кризиса, вызванного пандемией
-      COVID-19. Показатель роста
-      российского рекламного рынка
-      в 2021-м составил <span>22%</span>.
-    </blockquote>
-    <p>
-      Позже станет ясно: 2021 год — время равновесия, своеобразная
-      «зона рекреации» между двумя кризисами, а 2022-й — точка
-      отсчета, с которой начинается новая эпоха медиарекламного
-      рынка.
-    </p>
-    <p>
-      Драйверами рекламного рынка в первом полугодии 2022 года
-      стали категории
-      <span class='text-bold'>«e-сom и интернет-сервисы»</span>,
-      <span class='text-bold'>«финансовые и страховые услуги»</span>,
-      <span class='text-bold'>«досуг и развлечения»</span>
-      и
-      <span class='text-bold'>«телеком»</span>.
-      Несмотря на турбулентность в российской экономике, игроки этих
-      категорий нарастили рекламные бюджеты на ТВ по итогам первых
-      6 месяцев года
-    </p>
-    <h2 class='report__sub-title'>ТОВАРНЫЕ КАТЕГОРИИ-ДРАЙВЕРЫ</h2>
-
-    <div class='report-histograms'>
-      <div class='report-histograms__col animate__animated animate__backInUp'>
-        <div class='text-small-bold'>Доля бюджета 1Н 2022, % </div>
-        <img class='report-histograms__img' src='images/gr-1.svg' alt=''>
-      </div>
-      <div class='report-histograms__col animate__animated animate__backInUp'>
-        <div class='text-small-bold'>Динамика бюджета 1Н 2022 / 1Н 2021, %</div>
-        <img class='report-histograms__img' src='images/gr-2.svg' alt=''>
-      </div>
-    </div>
-
-    <p>
-      В федеральном сегменте телерекламного рынка категория e-com
-      в первом полугодии 2022-го росла чуть медленнее категории
-      интернет-сервисов (+39 и +47% соответственно*). Их доли
-      составили 9 и 8%.
-      <small> * Источник: внутренняя аналитика НРА</small>
-    </p>
-  </section>
-
-  <section class='report-counter'>
-    <div class='report-counter__inner container'>
-      <div class='text-small-bold'>
-        За первое полугодие
-        2022 года на всех
-        направлениях ТВ
-        разместилось
-      </div>
-      <div class='report-count'>
-        394
-      </div>
-      <div class='text-small-bold'>
-        новых
-        и вернувшихся
-        рекламодателя
-      </div>
-    </div>
-  </section>
-
-  <section class='container'>
-    <p>
-      Структура и паттерны нового рынка в процессе формирования,
-      но уже сейчас очевидно: трансформации, произошедшие в первой
-      половине 2022 года, предопределят вектор развития индустрии
-      на многие годы. Усилия и стремления, которые проявляют её
-      игроки сегодня, напрямую влияют на картину будущего. Рынок
-      в процессе глобального перерождения, потенциал развития
-      и роста большой: границы не очерчены, а ставки — высоки
-    </p>
-  </section>
-
-  <section id='new-vector'>
-    <img src="./images/2-R.svg" alt="">
-    <h2 class='new-vector__title-second'>ПОТРЕБИТЕЛИ:<br> НОВЫЙ ВЕКТОР</h2>
-  </section>
-
-  <section class='report-full-version bg-color-gray'>
-    <div class='report-full-version__content container'>
-
-      <div class='report-full-version__col-1'>
-        <div class='report-full-version__title'>Читайте в полной версии отчета</div>
-        <a href='./download/NRA-AR-2022-site.pdf' download class='report-btn'>Скачать PDF</a>
-      </div>
-      <div class='report-full-version__col-2'>
-        <ul class='report-list'>
-          <li>Аудитория стремится экономить, продолжая интенсивно потреблять</li>
-          <li>СТМ — сила бренда ритейлера в продукте</li>
-          <li>Е-com — драйвер закупок впрок</li>
-          <li>Шопинг — средство от стресса</li>
-          <li>Поиск замен — один из первых приоритетов</li>
-          <li>Параллельный импорт: международные бренды без глобальной коммуникации</li>
-          <li>Великая локализация: российские аналоги международных брендов</li>
-          <li>Актуальность рекламы на пике</li>
-          <li>Телереклама — для успешных брендов</li>
-          <li>E-com — часть повседневной рутины</li>
-          <li>Парк умных устройств продолжает расти</li>
-          <li>Дом — центр развлечений</li>
-          <li>Удаленная работа и обучение стали нормой</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class='container'>
-    <p>
-      2022-й — год кардинальных перемен на российском
-      потребительском рынке. Аудитория продолжает адаптироваться
-      к рыночным изменениям. Россияне выбирают стратегии
-      экономии, которые далеко не всегда связаны со снижением
-      темпов потребления. Многие переключаются на более доступные
-      бренды, активнее используют спецпредложения, а также ищут
-      качественные альтернативы среди российских производителей.
-    </p>
-    <blockquote class='quote'>
-      Почти <span>50%</span>*
-      потребителей сегодня
-      озабочены поиском замен
-      привычным брендам. Россияне
-      отмечают, что им стало сложнее
-      принимать решения о покупках.
-      Нехватку навигации среди
-      альтернативных товаров и услуг
-      могла бы заполнить реклама.
-      <small>* Источник: НРА/OMI, «Изучение, замещение, адаптация»</small>
-    </blockquote>
-
-    <div class='report-histograms'>
-      <div class='report-histograms__col'>
-        <div class='text-small-bold' style='padding-right:60px'>
-          Изменение в FMCG-потреблении
-          в 2022 году по сравнению
-          с аналогичным периодом прошлого
-          года, % опрошенных
+      <div class='first-screen'>
+        <div class='first-screen__report-data container'>
+          <div class='first-screen__year'>2021—2022</div>
+          <div class='first-screen__text'>ИНДУСТРИАЛЬНЫЙ ОТЧЕТ</div>
         </div>
-        <img class="report-histograms__img" src='images/gr-3.svg' alt='' />
-        <small>Источник: НРА/OMI, «Изучение, замещение, адаптация»</small>
-        <p style='padding-right:60px'>
-          В сложные времена аудитория
-          ищет в рекламе поддержку
-          и опору. Полезность ТВ-рекламы и доверие к ней
-          находятся на высоком уровне.
-          57%* россиян согласны
-          с тем, что телереклама
-          помогает ориентироваться
-          в многообразии брендов
-          и совершать покупки. Товары,
-          знакомство с которыми
-          произошло в процессе
-          ТВ-просмотра, потребители
-          охотнее выбирают и включают
-          в свой ассортимент
+        <div class='first-screen__title-first'>Время</div>
+        <!-- <div class='first-screen__letters'>Н:P:A</div> -->
+        <div class='first-screen__letters'>
+          <img class='first-screen__logo' src="./images/Logo.svg" alt="Logo" />
+        </div>
+        <a class='first-screen__link' href='#'>СМОТРЕТЬ ОТЧЕТ</a>
+      </div>
+
+    </section>
+
+    <section id="section2" class="section">
+
+      <div class='second-screen'>
+
+        <div class="parallaxie heading-container" style="background: url('./images/1-R.svg')">
+          <div class="heading">
+              <h1>Parallaxie</h1>
+              <div class="description">Easiest, Responsive and Customizable Parallax jQuery Plugin</div>
+              <a rel="nofollow" href="https://github.com/TheUltrasoft/Parallaxie/archive/master.zip" class="btn"><i class="fa fa-download"></i> Download Plugin</a>
+          </div>
+      </div>
+  
+  
+      <div id="main_bg" class="parallaxie">
+          <div id="shoe-01" class="parallaxie" data-parallaxie='{"size": "auto", "pos_x":"20%", "speed":-0.3, "offset":100}'></div>
+          <div id="shoe-02" class="parallaxie" data-parallaxie='{"size": "auto", "pos_x":"70%", "speed":0.4, "offset":0}'></div>
+      </div>
+
+        <!-- <img src='./images/1-R.svg' alt='' class='first-screen__img' /> -->
+        <h2 class='first-screen__title-second'>РЫНОК: ТОЧКА ОТСЧЕТА</h2>
+      </div>
+
+      <div class='report-full-version bg-color-blue'>
+        <div class='report-full-version__content container'>
+          <div class='report-full-version__col-1'>
+            <div class='report-full-version__title'>Читайте в&nbsp;полной версии отчета</div>
+            <a href='./download/NRA-AR-2022-site.pdf' download class='report-btn'>Скачать PDF</a>
+          </div>
+          <div class='report-full-version__col-2'>
+            <ul class='report-list'>
+              <li>Рынок 2021: под знаком восстановительного роста</li>
+              <li>1&nbsp;полугодие 2022&nbsp;&mdash; новая точка отсчета</li>
+              <li>Вслед за&nbsp;корректировкой спроса меняется и&nbsp;ландшафт ТВ-рекламодателей</li>
+              <li>Отечественные рекламодатели: рост ускоряется</li>
+              <li>Доля performance растет</li>
+              <li>Новые рекламодатели тестируют ТВ</li>
+              <li>Структура бюджетов: рост доли средних и&nbsp;небольших игроков</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <p>
+          2021 год стал одним из&nbsp;самых успешных в&nbsp;истории российского
+          медиарекламного рынка. После полного неопределенности
+          2020-го индустрия перешла к&nbsp;интенсивному восстановительному
+          росту.
         </p>
-        <small>Источник: НРА/OMI, «Изучение, замещение, адаптация»</small>
+        <blockquote class='quote'>
+          2021&nbsp;&mdash; год восстановления после
+          кризиса, вызванного пандемией
+          COVID-19. Показатель роста
+          российского рекламного рынка
+          в&nbsp;2021-м составил <span>22%</span>.
+        </blockquote>
+        <p>
+          Позже станет ясно: 2021 год&nbsp;&mdash; время равновесия, своеобразная
+          &laquo;зона рекреации&raquo; между двумя кризисами, а&nbsp;2022-й&nbsp;&mdash; точка
+          отсчета, с&nbsp;которой начинается новая эпоха медиарекламного
+          рынка.
+        </p>
+        <p>
+          Драйверами рекламного рынка в&nbsp;первом полугодии 2022 года
+          стали категории
+          <span class='text-bold'>«e-сom и&nbsp;интернет-сервисы»</span>,
+          <span class='text-bold'>«финансовые и&nbsp;страховые услуги»</span>,
+          <span class='text-bold'>«досуг и&nbsp;развлечения»</span>
+          и
+          <span class='text-bold'>«телеком»</span>.
+          Несмотря на&nbsp;турбулентность в&nbsp;российской экономике, игроки этих
+          категорий нарастили рекламные бюджеты на&nbsp;ТВ по&nbsp;итогам первых
+          6&nbsp;месяцев года
+        </p>
+        <h2 class='report__sub-title'>ТОВАРНЫЕ КАТЕГОРИИ-ДРАЙВЕРЫ</h2>
+
+        <div class='report-histograms'>
+          <div class='report-histograms__col animate__animated animate__backInUp'>
+            <div class='text-small-bold'>Доля бюджета 1Н&nbsp;2022, %</div>
+            <img class='report-histograms__img' src='images/gr-1.svg' alt=''>
+          </div>
+          <div class='report-histograms__col animate__animated animate__backInUp'>
+            <div class='text-small-bold'>Динамика бюджета 1Н&nbsp;2022&nbsp;/ 1Н&nbsp;2021, %</div>
+            <img class='report-histograms__img' src='images/gr-2.svg' alt=''>
+          </div>
+        </div>
+
+        <p>
+          В&nbsp;федеральном сегменте телерекламного рынка категория e-com
+          в&nbsp;первом полугодии 2022-го росла чуть медленнее категории
+          интернет-сервисов (+39&nbsp;и&nbsp;+47% соответственно*). Их&nbsp;доли
+          составили 9&nbsp;и&nbsp;8%.
+          <small> * Источник: внутренняя аналитика НРА</small>
+        </p>
       </div>
-      <div class='report-histograms__col'>
+
+      <div class='report-counter'>
+        <div class='report-counter__inner container'>
+          <div class='text-small-bold'>
+            За&nbsp;первое полугодие
+            2022 года на&nbsp;всех
+            направлениях&nbsp;ТВ
+            разместилось
+          </div>
+          <!-- <div class='report-count report-count-js' data-count="394"></div> -->
+          <div class="report-count number-js" data-max="394" data-speed='5'>0</div>
+          <div class='text-small-bold'>
+            новых
+            и&nbsp;вернувшихся
+            рекламодателя
+          </div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <p>
+          Структура и&nbsp;паттерны нового рынка в&nbsp;процессе формирования,
+          но&nbsp;уже сейчас очевидно: трансформации, произошедшие в&nbsp;первой
+          половине 2022&nbsp;года, предопределят вектор развития индустрии
+          на&nbsp;многие годы. Усилия и&nbsp;стремления, которые проявляют её
+          игроки сегодня, напрямую влияют на&nbsp;картину будущего. Рынок
+          в&nbsp;процессе глобального перерождения, потенциал развития
+          и&nbsp;роста большой: границы не&nbsp;очерчены, а&nbsp;ставки&nbsp;&mdash; высоки
+        </p>
+      </div>
+
+    </section>
+    <section id="section3" class="section">
+
+      <div class="hero-section" snake-parallax="hero-1">
+        <div class="hero-wrapper">
+          <div class="hero-overlay"></div>
+        </div>
+      </div>
+
+      <div style='display: grid;'>
+        <img src="./images/2-R.svg" alt="">
+        <h2 class='new-vector__title-second'>ПОТРЕБИТЕЛИ:<br> НОВЫЙ ВЕКТОР</h2>
+      </div>
+
+      <div class='report-full-version bg-color-gray'>
+        <div class='report-full-version__content container'>
+
+          <div class='report-full-version__col-1'>
+            <div class='report-full-version__title'>Читайте в&nbsp;полной версии отчета</div>
+            <a href='./download/NRA-AR-2022-site.pdf' download class='report-btn'>Скачать PDF</a>
+          </div>
+          <div class='report-full-version__col-2'>
+            <ul class='report-list'>
+              <li>Аудитория стремится экономить, продолжая интенсивно потреблять</li>
+              <li>СТМ&nbsp;&mdash; сила бренда ритейлера в&nbsp;продукте</li>
+              <li>Е-com&nbsp;&mdash; драйвер закупок впрок</li>
+              <li>Шопинг&nbsp;&mdash; средство от&nbsp;стресса</li>
+              <li>Поиск замен&nbsp;&mdash; один из&nbsp;первых приоритетов</li>
+              <li>Параллельный импорт: международные бренды без глобальной коммуникации</li>
+              <li>Великая локализация: российские аналоги международных брендов</li>
+              <li>Актуальность рекламы на&nbsp;пике</li>
+              <li>Телереклама&nbsp;&mdash; для успешных брендов</li>
+              <li>E-com&nbsp;&mdash; часть повседневной рутины</li>
+              <li>Парк умных устройств продолжает расти</li>
+              <li>Дом&nbsp;&mdash; центр развлечений</li>
+              <li>Удаленная работа и&nbsp;обучение стали нормой</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <p>
+          2022-й&nbsp;&mdash; год кардинальных перемен на&nbsp;российском
+          потребительском рынке. Аудитория продолжает адаптироваться
+          к&nbsp;рыночным изменениям. Россияне выбирают стратегии
+          экономии, которые далеко не&nbsp;всегда связаны со&nbsp;снижением
+          темпов потребления. Многие переключаются на&nbsp;более доступные
+          бренды, активнее используют спецпредложения, а&nbsp;также ищут
+          качественные альтернативы среди российских производителей.
+        </p>
+        <blockquote class='quote'>
+          Почти <span>50%</span>*
+          потребителей сегодня
+          озабочены поиском замен
+          привычным брендам. Россияне
+          отмечают, что им&nbsp;стало сложнее
+          принимать решения о&nbsp;покупках.
+          Нехватку навигации среди
+          альтернативных товаров и&nbsp;услуг
+          могла&nbsp;бы заполнить реклама.
+          <small>* Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
+        </blockquote>
+
+        <div class='report-histograms'>
+          <div class='report-histograms__col'>
+            <div class='text-small-bold pr-sm-60px'>
+              Изменение в&nbsp;FMCG-потреблении
+              в&nbsp;2022 году по&nbsp;сравнению
+              с&nbsp;аналогичным периодом прошлого
+              года, %&nbsp;опрошенных
+            </div>
+            <img class="report-histograms__img" src='images/gr-3.svg' alt='' />
+            <small>Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
+            <p class='pr-sm-60px'>
+              В&nbsp;сложные времена аудитория
+              ищет в&nbsp;рекламе поддержку
+              и&nbsp;опору. Полезность ТВ-рекламы и&nbsp;доверие к&nbsp;ней
+              находятся на&nbsp;высоком уровне.
+              57%* россиян согласны
+              с&nbsp;тем, что телереклама
+              помогает ориентироваться
+              в&nbsp;многообразии брендов
+              и&nbsp;совершать покупки. Товары,
+              знакомство с&nbsp;которыми
+              произошло в&nbsp;процессе
+              ТВ-просмотра, потребители
+              охотнее выбирают и&nbsp;включают
+              в&nbsp;свой ассортимент
+            </p>
+            <small>Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
+          </div>
+          <div class='report-histograms__col'>
+            <div class='text-small-bold'>
+              Покупали&nbsp;ли вы&nbsp;за&nbsp;последние 30&nbsp;дней
+              товары тех производителей, о&nbsp;которых
+              раньше не&nbsp;знали и&nbsp;чью продукцию
+              не&nbsp;пробовали, %&nbsp;опрошенных
+            </div>
+            <img class="report-histograms__img" src='images/gr-4.svg' alt='' />
+            <small>Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
+            <div class='text-small-bold mtb-sm-60px'>
+              ТВ-реклама помогает потребителям
+              ориентироваться в&nbsp;брендах
+              и&nbsp;совершать покупки,
+              %&nbsp;согласных от&nbsp;смотрящих&nbsp;ТВ
+            </div>
+            <div class='report-bar-item'>
+              <div class='report-bar-item__text'>
+                Телевизионная
+                реклама помогает
+                мне ориентироваться
+                в&nbsp;товарах, услугах,
+                брендах
+              </div>
+              <div class='report-bar-item__bar'>
+                <div class='report-bar'>57</div>
+              </div>
+            </div>
+            <div class='report-bar-item'>
+              <div class='report-bar-item__text'>
+                Среди брендов, чью
+                рекламу я&nbsp;видел
+                по&nbsp;телевизору,
+                выбирать проще, чем
+                среди незнакомых
+                производителей
+              </div>
+              <div class='report-bar-item__bar'>
+                <div class='report-bar'>57</div>
+              </div>
+            </div>
+            <div class='report-bar-item'>
+              <div class='report-bar-item__text'>
+                Товары повседневного
+                спроса, которые
+                рекламируются по
+                телевизору, доступны
+                обычным людям
+              </div>
+              <div class='report-bar-item__bar'>
+                <div class='report-bar'>60</div>
+              </div>
+            </div>
+            <small>Источник: НРА/OMI, &laquo;Изучение, замещение, адаптация&raquo;</small>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="section4" class="section">
+
+      <div class='second-screen'>
+        <img src='./images/3-R.svg' alt='' class='first-screen__img' />
+        <h2 class='first-screen__title-second'>ТВ&nbsp;&mdash; КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</h2>
+      </div>
+      <div class='report-full-version bg-color-blue'>
+        <div class='report-full-version__content container'>
+          <div class='report-full-version__col-1'>
+            <div class='report-full-version__title'>Читайте в&nbsp;полной версии отчета</div>
+            <a href='./download/NRA-AR-2022-site.pdf' download class='report-btn'>Скачать PDF</a>
+          </div>
+          <div class='report-full-version__col-2'>
+            <ul class='report-list'>
+              <li>ТВ без границ</li>
+              <li>ТВ&nbsp;И&nbsp;E-COM: КУРС&nbsp;&mdash; НА&nbsp;ТРАНСГРАНИЧНОСТЬ</li>
+              <li>ТВ&nbsp;&mdash; навигатор для потребителя</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='container'>
+        <h2 class="report__sub-title">ТВ БЕЗ ГРАНИЦ</h2>
+        <p>
+          Несмотря на сложности с разработкой и производством,
+          предложение ТВ остается стабильным. У телевидения появляется
+          новое предназначение — мультипродукт, который отвечает
+          на запрос зрителя на просмотр контента в разных средах
+          и на разных платформах. Это отличительная способность ТВ —
+          гибко и быстро реагировать на меняющиеся запросы потребителя
+        </p>
+      </div>
+
+      <div class='report-full-version bg-color-gray'>
+        <div class="container tv-without-border__header">
+          <div class='text-small-bold'>Доля нелинейного использования ТВ-экрана, %, 2021</div>
+          <div class='text-small-bold'>Количество телезрителей во&nbsp;всем мире 2017&ndash;2026, млрд человек</div>
+        </div>
+        <div class='tv-without-border'>
+          <div class='tv-without-border__col'>
+            <img src="images/gr-6.svg" alt="">
+            <small>Источник: Mediascope, TV&nbsp;Index, 2021</small>
+          </div>
+          <div class='tv-without-border__col'>
+            <img src="images/gr-7.svg" alt="">
+            <small>Источник: Statista, Global number of&nbsp;TV viewers 2017&ndash;2026, май 2022</small>
+          </div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <h2 class="report__sub-title">ТВ И E-COM: КУРС — НА ТРАНСГРАНИЧНОСТЬ</h2>
+        <p>
+          Зрителю нужны устойчивые модели, рекламу на телевидении он
+          считает одной из таких. Этот инструмент качественно работает
+          не только в стабильные периоды — в условиях неопределенности,
+          он также демонстрирует гарантированно высокую эффективность
+          и, более того, становится необходимостью, потому что успешно
+          отвечает запросу зрителя на надежную и доверительную
+          коммуникацию.
+        </p>
+        <div class='report-row'>
+          <p>
+            После пандемийного 2020-го
+            приоритеты рекламодателей
+            изменились. Бизнес
+            переориентировался на онлайн-продажи, и эта тенденция усиливается
+            в 2022 году. При этом одним
+            из драйверов развития глобального
+            рынка электронной коммерции
+            выступает телевидение. Площадки,
+            заинтересованные в продвижении
+            бренда, всё активнее используют ТВ
+            в качестве основной составляющей
+            рекламного микса
+          </p>
+          <div class="report-persent bg-color-green">
+            <div class='report-persent-77'>
+              <span class="report-persent-77 number-js" data-max="77" data-speed='50'>0</span>%
+            </div>
+
+
+            <div class='report-persent-text'>
+              Доля performance- бюджетов в&nbsp;ТВ-кампаниях категории E-com
+            </div>
+            <div class='report-persent-source'>
+              Источник: Внутренняя аналитика НРА
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <h2 class="report__sub-title">ТВ&nbsp;&mdash; НАВИГАТОР ДЛЯ ПОТРЕБИТЕЛЯ</h2>
         <div class='text-small-bold'>
-          Покупали ли вы за последние 30 дней
-          товары тех производителей, о которых
-          раньше не знали и чью продукцию
-          не пробовали, % опрошенных
+          Вклад ТВ в каждый этап воронки продаж, % опрошенных
         </div>
-        <img class="report-histograms__img" src='images/gr-4.svg' alt='' />
-        <small>Источник: НРА/OMI, «Изучение, замещение, адаптация»</small>
-        <div class='text-small-bold' style='margin:60px 0'>
-          ТВ-реклама помогает потребителям
-          ориентироваться в брендах
-          и совершать покупки,
-          % согласных от смотрящих ТВ
-        </div>
-        <div class='report-bar-item'>
-          <div class='report-bar-item__text'>
-            Телевизионная
-            реклама помогает
-            мне ориентироваться
-            в товарах, услугах,
-            брендах
+        <div class='tv-navigator'>
+          <div class='tv-navigator-row'>
+            <div class='tv-navigator-row__bar'>
+              <span class='tv-navigator-row__bar-inner w-100 bg-color-dark-blue'>Осведомленность </span>
+            </div>
+            <div class='tv-navigator-row__txt'>20 Ищут информацию о товаре/услуге</div>
           </div>
-          <div class='report-bar-item__bar'>
-            <div class='report-bar'>57</div>
+          <div class='tv-navigator-row'>
+            <div class='tv-navigator-row__bar'>
+              <span class='tv-navigator-row__bar-inner w-80 bg-color-dark-blue'> Интерес</span>
+            </div>
+            <div class='tv-navigator-row__txt'>17 Подумывают купить товар/услугу</div>
           </div>
-        </div>
-        <div class='report-bar-item'>
-          <div class='report-bar-item__text'>
-            Среди брендов, чью
-            рекламу я видел
-            по телевизору,
-            выбирать проще, чем
-            среди незнакомых
-            производителей
+          <div class='tv-navigator-row'>
+            <div class='tv-navigator-row__bar'>
+              <span class='tv-navigator-row__bar-inner w-60 bg-color-dark-blue'>Решение </span>
+            </div>
+            <div class='tv-navigator-row__txt'>11 Мнение о товаре/услуге изменилось к лучшему</div>
           </div>
-          <div class='report-bar-item__bar'>
-            <div class='report-bar'>57</div>
+          <div class='tv-navigator-row'>
+            <div class='tv-navigator-row__bar'>
+              <span class='tv-navigator-row__bar-inner w-40 bg-color-dark-blue'>Действие </span>
+            </div>
+            <div class='tv-navigator-row__txt'>13 Ищут товар в магазине</div>
           </div>
-        </div>
-        <div class='report-bar-item'>
-          <div class='report-bar-item__text'>
-            Товары повседневного
-            спроса, которые
-            рекламируются по
-            телевизору, доступны
-            обычным людям
+          <div class='tv-navigator-row'>
+            <div class='tv-navigator-row__bar'>
+              <span class='tv-navigator-row__bar-inner w-20 bg-color-dark-blue'>Покупка </span>
+            </div>
+            <div class='tv-navigator-row__txt'>7 Совершают покупку</div>
           </div>
-          <div class='report-bar-item__bar'>
-            <div class='report-bar'>60</div>
-          </div>
+          <small class='text-center'>Источник: Mediascope, BrandPulse, 2021</small>
         </div>
-        <small>Источник: НРА/OMI, «Изучение, замещение, адаптация»</small>
       </div>
-    </div>
 
-  </section>
+    </section>
 
-  <section class='second-screen' id='cultural-code'>
-    <img src='./images/3-R.svg' alt='' class='first-screen__img' />
-    <h2 class='first-screen__title-second'>ТВ — КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</h2>
-  </section>
-  <section class='report-full-version bg-color-blue'>
-    <div class='report-full-version__content container'>
-      <div class='report-full-version__col-1'>
-        <div class='report-full-version__title'>Читайте в полной версии отчета</div>
-        <a href='./download/NRA-AR-2022-site.pdf' download class='report-btn'>Скачать PDF</a>
-      </div>
-      <div class='report-full-version__col-2'>
-        <ul class='report-list'>
-          <li>ТВ без границ</li>
-          <li>ТВ и E-com: курс — на трансграничность</li>
-          <li>ТВ — навигатор для потребителя</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <div class="arrow-top"></div>
 
+  </div>
 
-  <section class='container'>
-    <h2 class="report__sub-title">ТВ БЕЗ ГРАНИЦ</h2>
-    <p>
-      Несмотря на сложности с разработкой и производством,
-      предложение ТВ остается стабильным. У телевидения появляется
-      новое предназначение — мультипродукт, который отвечает
-      на запрос зрителя на просмотр контента в разных средах
-      и на разных платформах. Это отличительная способность ТВ —
-      гибко и быстро реагировать на меняющиеся запросы потребителя
-    </p>
-  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href='./pages/index.css' rel='stylesheet'>
+  <script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
+  <script src="./js/script.js"></script>
 
-  <section class='report-full-version bg-color-gray'>
-    <div class="container tv-without-border__header">
-      <div class='text-small-bold'>Доля нелинейного использования ТВ-экрана, %, 2021</div>
-      <div class='text-small-bold'>Количество телезрителей во всем мире 2017–2026, млрд человек</div>
-    </div>
-    <div class='tv-without-border'>
-      <div class='tv-without-border__col'>
-        <img src="images/gr-6.svg" alt="">
-        <small>Источник: Mediascope, TV Index, 2021</small>
-      </div>
-      <div class='tv-without-border__col'>
-        <img src="images/gr-7.svg" alt="">
-        <small>Источник: Statista, Global number of TV viewers 2017–2026, май 2022</small>
-      </div>
-    </div>
-  </section>
-
-  <section class='container'>
-    <h2 class="report__sub-title">ТВ И E-COM: КУРС — НА ТРАНСГРАНИЧНОСТЬ</h2>
-    <p>
-      Зрителю нужны устойчивые модели, рекламу на телевидении он
-      считает одной из таких. Этот инструмент качественно работает
-      не только в стабильные периоды — в условиях неопределенности,
-      он также демонстрирует гарантированно высокую эффективность
-      и, более того, становится необходимостью, потому что успешно
-      отвечает запросу зрителя на надежную и доверительную
-      коммуникацию.
-    </p>
-    <div class='report-row'>
-      <p>
-        После пандемийного 2020-го
-        приоритеты рекламодателей
-        изменились. Бизнес
-        переориентировался на онлайн-продажи, и эта тенденция усиливается
-        в 2022 году. При этом одним
-        из драйверов развития глобального
-        рынка электронной коммерции
-        выступает телевидение. Площадки,
-        заинтересованные в продвижении
-        бренда, всё активнее используют ТВ
-        в качестве основной составляющей
-        рекламного микса
-      </p>
-      <div class="report-persent bg-color-green">
-        <div class='report-persent-77'>77%</div>
-        <div class='report-persent-text'>
-          Доля performance-
-          бюджетов
-          в ТВ-кампаниях
-          категории E-com
-        </div>
-        <div class='report-persent-source'>
-          Источник: Внутренняя аналитика НРА
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class='container'>
-    <h2 class="report__sub-title">ТВ — НАВИГАТОР ДЛЯ ПОТРЕБИТЕЛЯ</h2>
-    <div class='text-small-bold'>
-      Вклад ТВ в каждый этап воронки продаж, % опрошенных
-    </div>
-    <div class='tv-navigator'>
-      <div class='tv-navigator-row'>
-        <div class='tv-navigator-row__bar'>
-          <span class='tv-navigator-row__bar-inner w-100 bg-color-dark-blue'>Осведомленность </span>
-        </div>
-        <div class='tv-navigator-row__txt'>20 Ищут информацию о товаре/услуге</div>
-      </div>
-      <div class='tv-navigator-row'>
-        <div class='tv-navigator-row__bar'>
-          <span class='tv-navigator-row__bar-inner w-80 bg-color-dark-blue'> Интерес</span>
-        </div>
-        <div class='tv-navigator-row__txt'>17 Подумывают купить товар/услугу</div>
-      </div>
-      <div class='tv-navigator-row'>
-        <div class='tv-navigator-row__bar'>
-          <span class='tv-navigator-row__bar-inner w-60 bg-color-dark-blue'>Решение </span>
-        </div>
-        <div class='tv-navigator-row__txt'>11 Мнение о товаре/услуге изменилось к лучшему</div>
-      </div>
-      <div class='tv-navigator-row'>
-        <div class='tv-navigator-row__bar'>
-          <span class='tv-navigator-row__bar-inner w-40 bg-color-dark-blue'>Действие </span>
-        </div>
-        <div class='tv-navigator-row__txt'>13 Ищут товар в магазине</div>
-      </div>
-      <div class='tv-navigator-row'>
-        <div class='tv-navigator-row__bar'>
-          <span class='tv-navigator-row__bar-inner w-20 bg-color-dark-blue'>Покупка </span>
-        </div>
-        <div class='tv-navigator-row__txt'>7 Совершают покупку</div>
-      </div>
-      <small class='text-center'>Источник: Mediascope, BrandPulse, 2021</small>
-    </div>
-  </section>
-
-  <div class="arrow-top"></div>
-
-  <div class='report-top-line report-top-line--starting-point  bg-light-blue'> РЫНОК: ТОЧКА ОТСЧЕТА </div>
-  <div class='report-top-line report-top-line--new-vector      bg-blue'> ПОТРЕБИТЕЛИ: НОВЫЙ ВЕКТОР </div>
-  <div class='report-top-line report-top-line--cultural-code   bg-dark-blue'> ТВ — КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ </div>
+  <script src='./js/parallax.js'></script>
+  <script>
+    $('.heading').height( $(window).height() );
+    $('.parallaxie').parallaxie();
+</script>
 
 </body>
 

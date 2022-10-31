@@ -3,9 +3,10 @@
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("fonts/Formular.woff2?v=3.19") format("woff2"),
+    src: 
          url("fonts/Formular.woff?v=3.19") format("woff"),
          url("fonts/Formular.ttf?v=3.19") format("truetype");
+         /* url("fonts/Formular.woff2?v=3.19") format("woff2"), */
   }
 
 @font-face {
