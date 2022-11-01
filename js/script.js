@@ -77,6 +77,8 @@ window.onload = function () {
   //     1000);
   // });
 
+
+
   //перeход по страницам
   //прокрутка до след пункта + фиксация соот пункта вверху стр 
 
@@ -171,6 +173,20 @@ window.onload = function () {
       unitsList[index].classList.remove('hovered');
     });
   });
+
+
+  //анимация картинок
+
+
+  new Vivus(
+    'first-screen-svg',
+    {
+      type: 'delayed',
+      duration: 400,
+      animTimingFunction: Vivus.EASE
+    },
+  );
+
 
 }
 
