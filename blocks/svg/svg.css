@@ -1,4 +1,64 @@
 .svg-graf-1-wrapper {
   border: 1px solid red;
   position: relative;
+  margin: 20px 0;
 }
+
+.svg-text-wrap {
+  position: absolute;
+  top: -8px;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3 - 18px));
+  gap: 18px;
+  height: 100%;
+}
+
+.svg-text-wrap-inner {
+    grid-template-columns: repeat(2, calc(100% / 2 - 18px));
+    gap: 23px;
+    height: 100%;
+    display: grid;
+}
+
+.svg-text {
+  writing-mode: vertical-lr;
+  height: 100%;
+  width: 40px;
+  text-align: right;
+  color: #fff;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  rotate: 180deg;
+}
+
+/* .svg-text-month,
+.svg-text-num {
+  padding: 10px 0;
+} */
+
+.svg-text-month {
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+  background: transparent;
+  border: 1px solid red;
+}
+
+.svg-text-num {
+  color: red;
+  rotate: 90deg;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.height-1 { height: 125px;}
+.height-2 { height: 100px;}
+.height-11 { height: 180px;}
+.height-12 { height: 150px;}
+.height-21 { height: 90px;}
+.height-22 { height: 125px;}

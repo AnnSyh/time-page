@@ -85,7 +85,7 @@
             <div class="hero-overlay"></div>
           </div>
         </div> -->
-        <img src='./images/1-R.svg' alt='' class='first-screen__img' />
+        <img src='./images/R-1.svg' alt='' class='first-screen__img' />
         <h2 class='first-screen__title-second'>РЫНОК: ТОЧКА ОТСЧЕТА</h2>
       </div>
 
@@ -269,29 +269,41 @@
 
             <!-- ------------------------- -->
             <div class='svg-graf-1-wrapper'>
+
+              <div class='svg-text-wrap'>
+                <div class='svg-text-wrap-inner'>
+                  <div class='svg-text svg-text-1'><span class='svg-text-month height-1'>весна</span> <span class='svg-text-num'>25</span></div>
+                  <div class='svg-text svg-text-2'><span class='svg-text-month height-2'>лето</span>  <span class='svg-text-num'>24</span></div>
+                </div>
+                <div class='svg-text-wrap-inner'>
+                  <div class='svg-text svg-text-1'><span class='svg-text-month height-11'>весна</span> <span class='svg-text-num'>56</span></div>
+                  <div class='svg-text svg-text-2'><span class='svg-text-month height-12'>лето</span>  <span class='svg-text-num'>50</span></div>
+                </div>
+                <div class='svg-text-wrap-inner'>
+                  <div class='svg-text svg-text-1'><span class='svg-text-month height-21'>весна</span> <span class='svg-text-num'>19</span></div>
+                  <div class='svg-text svg-text-2'><span class='svg-text-month height-22'>лето</span>  <span class='svg-text-num'>26</span></div>
+                </div>
+
+              </div>
+
               <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                 <rect width="1" height="10" x="0" y="2" fill="#2A4DFF">
                   <animate attributeName="y" values="10;0;" dur="1s" repeatCount="2" repeatCount="indefinite" />
                 </rect>
                 <rect width="1" height="10" x="1.25" y="3" fill="#00DB73">
                   <animate attributeName="y" values="10;0;" dur="1s" repeatCount="2" repeatCount="indefinite" />
-                    
                 </rect>
-  
                 <rect width="1" height="10" x="2.75" y="0" fill="#2A4DFF">
                   <animate attributeName="y" values="10;0;" dur="1s" repeatCount="2" repeatCount="indefinite" />
                 </rect>
                 <rect width="1" height="10" x="4" y="1" fill="#00DB73">
                   <animate attributeName="y" values="10;0;" dur="1s" repeatCount="2" repeatCount="indefinite" />
-                    
                 </rect>
-  
                 <rect width="1" height="10" x="5.5" y="4" fill="#2A4DFF">
                   <animate attributeName="y" values="10;0;" dur="1s" repeatCount="2" repeatCount="indefinite" />
                 </rect>
                 <rect width="1" height="10" x="6.75" y="3" fill="#00DB73">
                   <animate attributeName="y" values="10;0;" dur="1s" repeatCount="2" repeatCount="indefinite" />
-                    
                 </rect>
               </svg>
             </div>
@@ -405,8 +417,18 @@
     <section id="section4" class="section">
 
       <div class='second-screen'>
-        <img src='./images/3-R.svg' alt='' class='first-screen__img' />
-        <h2 class='first-screen__title-second'>ТВ&nbsp;&mdash; КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</h2>
+
+        <div class="wrapper parallax">
+          <div class="parallax-layer parallax-image">
+            <img src="./images/3-R.svg" alt="Сад изящных слов">
+          </div>
+          <span class="parallax-layer parallax-text">ТВ&nbsp;&mdash; КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</span>
+        </div>
+
+        <!-- <img src='./images/3-R.svg' alt='' />
+        <h2 class='first-screen__title-second'>ТВ&nbsp;&mdash; КУЛЬТУРНЫЙ КОД СОВРЕМЕННОСТИ</h2> -->
+
+
       </div>
       <div class='report-full-version bg-color-blue'>
         <div class='report-full-version__content container'>
@@ -561,7 +583,7 @@
     $(document, window).SnakeParallax(
       {
         backgroundPosition: "center top",
-        backgroundImage: "url('./images/1-R.svg')"
+        backgroundImage: "url('./images/R-1.svg')"
       }
     );
 
