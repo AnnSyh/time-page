@@ -36,3 +36,18 @@
     height: 60px;
   }
 }
+
+@media screen and (max-width:480px) {
+
+  .quote {
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .quote::after {
+    width: 30px;
+    height: 30px;
+  }
+}

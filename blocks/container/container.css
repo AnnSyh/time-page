@@ -4,10 +4,11 @@
     margin-right: auto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1030px) {
 
     .container {
         margin: 0 30px;
     }
 
 }
+

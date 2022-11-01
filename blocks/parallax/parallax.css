@@ -1,60 +1,64 @@
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.parallax {
+[data-paroller-factor] {
   position: relative;
-  perspective: 1px;
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: auto;
+  z-index: 0;
 }
 
-.parallax-layer {
-  position: absolute;
-  inset: 0;   
-  height: 100%;
+.jumbotron-1 {
+  background: hsla(0, 0%, 100%, .05);
+  /* background-color: #F0F0F2 !important; */
+  padding: 0;
+  margin: 0;
+  min-height: 460px;
+  min-width: 100%;
 }
 
-.parallax-image {
-   transform: translateZ(0);
-   object-fit: cover;
-  
-  /* img {
-    @media(max-width: 768px) {
-        height: calc(100% + 300px);
-        object-fit: cover;
-    }
-  } */
+.jumbotron-2 {
+  background: hsla(0, 0%, 100%, .05);
+  padding: 0;
+  margin: 0;
+  min-height: 400px;
+  min-width: 100%;
 }
 
-.parallax-text {
-  font-size: 72px;
-  color: #cde4f7;
-  transform: translateZ(-2px) translateX(100px) translateY(300px) scale(3);
-  
-  /* @media (max-width: 768px) {
-    font-size: 62px;
-    transform: translateZ(-2px) translateX(20px) translateY(300px) scale(3);
-    } */
+.jumbotron-3 {
+  background: hsla(0, 0%, 100%, .05);
+  padding: 0;
+  margin: 0;
+  min-height: 615px;
+  min-width: 100%;
 }
 
-@media(max-width: 768px) {
-  .parallax-image{
-    height: calc(100% + 300px);
-    object-fit: cover;
+@media screen and (max-width:1200px) {
+  .jumbotron-1 {
+    min-height: 385px;
   }
-  .parallax-text {
-    font-size: 62px;
-    transform: translateZ(-2px) translateX(20px) translateY(300px) scale(3);
+  .jumbotron-3 {
+    min-height: 435px;
+  }
+}
+@media screen and (max-width:991px) {
+  .jumbotron-1 {
+    min-height: 318px;
+  }
+  .jumbotron-3 {
+    min-height: 360px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .jumbotron-1 {
+    min-height: 245px;
+  }
+  .jumbotron-3 {
+    min-height: 320px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .jumbotron-1 {
+    min-height: 139px;
+  }
+  .jumbotron-3 {
+    min-height: 139px;
   }
 }

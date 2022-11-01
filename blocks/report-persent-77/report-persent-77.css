@@ -22,3 +22,13 @@
   font-size: 15px;
   margin-top: 30px;
 }
+
+@media screen and (max-width:480px) {
+  .report-persent-77 {
+    font-size: 120px;
+  }
+
+  .report-persent-text {
+    font-size: 20px;
+  }
+}

@@ -1,6 +1,6 @@
-.report-full-version {
+/* .report-full-version {
   border: 1px solid green;
-}
+} */
 
 .report-full-version__content {
   display: flex;
@@ -21,6 +21,9 @@
 
 .bg-color-gray {
   background-color: #F0F0F2;
+}
+.bg-color-light-gray {
+  background-color: #E1E1E6;
 }
 
 .bg-color-green {
@@ -62,6 +65,15 @@
 @media screen and (max-width:768px) {
   .report-full-version__content {
     flex-direction: column;
+  }
+
+  /* .report-full-version__title {
+    font-size: 28px;
+  } */
+
+  .report-list li {
+    font-size: 16px;
+    line-height: 30px;
   }
 
   .report-full-version__col-1 {

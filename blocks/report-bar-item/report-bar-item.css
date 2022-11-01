@@ -14,7 +14,8 @@
 }
 .report-bar{
   width: 100%;
-  background-color: #304EFF;
+  border:1px solid #304EFF;
+  /* background-color: #304EFF; */
   height: 40px;
   color: #fff;
   align-items: center;

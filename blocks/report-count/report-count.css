@@ -7,3 +7,10 @@
   line-height: 150px;
   min-width:355px;
 }
+
+@media screen and (max-width:480px) {
+  .report-count {
+    font-size: 150px;
+    height: auto;
+  }
+}

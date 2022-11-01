@@ -36,6 +36,21 @@
   text-transform: uppercase;
   background-color: #304EFF;
 }
+@media screen and (max-width:991px) {
+  .first-screen__title-second {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width:768px) {
+  .first-screen__title-second {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width:480px) {
+  .first-screen__title-second {
+    font-size: 25px;
+  }
+}
 
 .first-screen__logo {
   max-width: 180px;
@@ -65,18 +80,14 @@
   content: '';
   width: 100px;
   height: 50px;
-  background-image: url('../../images/Arrow.svg');
+  background-image: url('../../images/arrow.svg');
   background-repeat: no-repeat;
   position: absolute;
   top: 35px;
   left: calc(50% - 50px);
 }
 
-@media screen and (max-width:768px) {
-  .first-screen__title-second {
-    font-size: 35px;
-  }
-}
+
 
 /* Animation */
 .col {
@@ -144,7 +155,11 @@
   }
 }
 
+.stopped {
+  animation-name: none;
+}
+
 .first-screen__letters svg {
   animation: fadeIn 1s ease-in infinite alternate;
- 
+  animation-iteration-count: 5;
 }
