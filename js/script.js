@@ -129,10 +129,14 @@ window.onload = function () {
 
       } else {
         document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+
+        // document.querySelector('.report-top-line--section1').classList.remove("active-prev");
+        // document.querySelector('.report-top-line--section2').classList.remove("active-prev");
       }
 
     });
   }
+
 
   window.addEventListener("scroll", navHighlighter);
 
