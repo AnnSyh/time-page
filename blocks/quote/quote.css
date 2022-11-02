@@ -24,6 +24,12 @@
   font-family: 'Formular-Bold', sans-serif;
 }
 
+.quote sup {
+  color:#758585;
+  top: -21px;  
+  font-size: 44%;
+}
+
 @media screen and (max-width:768px) {
 
   .quote {

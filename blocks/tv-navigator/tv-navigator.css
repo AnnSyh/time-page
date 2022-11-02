@@ -27,6 +27,11 @@
   align-items: center;
   display: flex;
 }
+.tv-navigator-row__txt span {
+  font-size: 40px;
+  margin-right: 10px;
+  display: block;
+}
 
 .tv-navigator-row__bar-inner {
   display: flex;

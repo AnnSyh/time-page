@@ -3,6 +3,11 @@
   gap: 30px;
   padding-top:30px;
 }
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .report-histograms__col {
   width: 50%;
   display: flex;
@@ -10,7 +15,7 @@
   justify-content: space-between;
 }
 .text-small-bold {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Formular-Bold', sans-serif;
 }
 
@@ -55,9 +60,6 @@ small  {
   margin: 30px 0;
 }
 
-sup {
-  color:#758585;  
-}
 
 .report-top-line {
   color: #fff;

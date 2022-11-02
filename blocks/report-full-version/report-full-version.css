@@ -33,6 +33,9 @@
 .bg-color-dark-blue {
   background-color: #304EFF;
 }
+.color-dark-blue {
+  color: #304EFF;
+}
 
 .report-full-version__col-1 {
   display: flex;
