@@ -24,40 +24,40 @@
 
 .svg-text {
   writing-mode: vertical-lr;
-  height: 100%;
+  /* height: 100%; */
   width: 40px;
   text-align: right;
   color: #fff;
   font-size: 16px;
   align-items: center;
   display: flex;
-  justify-content: flex-start;
-  rotate: 180deg;
+  justify-content: flex-end;
+  /* rotate: 180deg; */
 }
-
-/* .svg-text-month,
-.svg-text-num {
-  padding: 10px 0;
-} */
 
 .svg-text-month {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 
   background: transparent;
   border: 1px solid red;
+
+  
 }
 
 .svg-text-num {
   color: red;
-  rotate: 90deg;
+  rotate: -90deg;
   font-size: 25px;
   font-weight: bold;
 }
 
 .height-1 {
-  height: 125px;
+  background-color: #2196F3;
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
+  /* max-height: 125px; */
 }
 
 .height-2 {
@@ -80,43 +80,75 @@
   height: 125px;
 }
 
-/* заливка блока */
-.block-animation {
+/* ---------------------animation-lr----------------------- */
+
+.animation-lr {
   height: 30px;
   background-color: #2196F3;
-  transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
-}
-
-.scale-up-hor-left {
-	-webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s ;
-	        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s ;
+  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s;
+  animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s;
 }
 
 @-webkit-keyframes scale-up-hor-left {
   0% {
     -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
+    transform: scaleX(0.4);
     -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
   }
+
   100% {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
   }
 }
+
 @keyframes scale-up-hor-left {
   0% {
     -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
+    transform: scaleX(0.4);
     -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
   }
+
   100% {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+/* --------------animation-bt--------------------------------- */
+
+.animation-bt {
+  width: 30px;
+  height: 200px;
+  background-color: #2196F3;
+
+  animation-name: scale-up-hor-right;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  /* shorthand
+  animation: scale-up-hor-right 1s ease 0s 1 normal none;*/
+}
+
+@keyframes scale-up-hor-right {
+
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 100%;
   }
 }
