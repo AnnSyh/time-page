@@ -16,10 +16,10 @@
 }
 
 .svg-text-wrap-inner {
-    grid-template-columns: repeat(2, calc(100% / 2 - 18px));
-    gap: 23px;
-    height: 100%;
-    display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2 - 18px));
+  gap: 23px;
+  height: 100%;
+  display: grid;
 }
 
 .svg-text {
@@ -44,7 +44,7 @@
   width: 100%;
   display: flex;
   align-items: center;
- 
+
   background: transparent;
   border: 1px solid red;
 }
@@ -56,9 +56,67 @@
   font-weight: bold;
 }
 
-.height-1 { height: 125px;}
-.height-2 { height: 100px;}
-.height-11 { height: 180px;}
-.height-12 { height: 150px;}
-.height-21 { height: 90px;}
-.height-22 { height: 125px;}
+.height-1 {
+  height: 125px;
+}
+
+.height-2 {
+  height: 100px;
+}
+
+.height-11 {
+  height: 180px;
+}
+
+.height-12 {
+  height: 150px;
+}
+
+.height-21 {
+  height: 90px;
+}
+
+.height-22 {
+  height: 125px;
+}
+
+/* заливка блока */
+.block-animation {
+  height: 30px;
+  background-color: #2196F3;
+  transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+}
+
+.scale-up-hor-left {
+	-webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s ;
+	        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s ;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}

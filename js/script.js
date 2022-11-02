@@ -51,7 +51,9 @@ window.onload = function () {
   pageCounts.forEach(item => {
 
     var numberTop = item.getBoundingClientRect().top
-    var start = +item.innerHTML, end = +item.dataset.max;
+    var start = +item.innerHTML 
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
 
     window.addEventListener('scroll', function onScroll() {
       if (window.pageYOffset > numberTop - window.innerHeight / 2) {
@@ -61,23 +63,12 @@ window.onload = function () {
           if (start == end) {
             clearInterval(interval);
           }
-        });
-        // }, 50); // скорость прокрутки
+        // });
+        }, speed); // скорость прокрутки
       }
     });
 
   })
-  //анимация счетчиков
-  // $(".report-count-js").each(function () {
-  //   var tcount = $(this).data("count");
-  //   $(this).animateNumber({
-  //     number: tcount,
-  //     easing: 'easeInQuad',
-  //   },
-  //     1000);
-  // });
-
-
 
   //перeход по страницам
   //прокрутка до след пункта + фиксация соот пункта вверху стр 
