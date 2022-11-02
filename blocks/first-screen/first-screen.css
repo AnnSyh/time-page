@@ -14,16 +14,46 @@
   max-width: 350px;
 }
 
+@media screen and (max-width:480px) {
+  .first-screen__logo {
+    max-width: 250px;
+  }
+}
+
 .first-screen__year {
   font-family: 'Formular-Light';
   font-size: 100px;
   text-transform: uppercase;
 }
 
+@media screen and (max-width:991px) {
+  .first-screen__year {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .first-screen__year {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .first-screen__year {
+    font-size: 25px;
+  }
+}
+
 .first-screen__text {
   font-family: 'Formular';
   font-size: 40px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width:480px) {
+  .first-screen__text {
+    font-size: 25px;
+  }
 }
 
 .first-screen__title-first {
@@ -33,6 +63,26 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width:991px) {
+  .first-screen__title-first {
+    font-size: 130px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .first-screen__title-first {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .first-screen__title-first {
+    font-size: 90px;
+  }
+}
+
+
+
 .first-screen__title-second {
   margin: 0;
   font-weight: 400;
@@ -41,16 +91,19 @@
   text-transform: uppercase;
   background-color: #304EFF;
 }
+
 @media screen and (max-width:991px) {
   .first-screen__title-second {
     font-size: 45px;
   }
 }
+
 @media screen and (max-width:768px) {
   .first-screen__title-second {
     font-size: 35px;
   }
 }
+
 @media screen and (max-width:480px) {
   .first-screen__title-second {
     font-size: 25px;
@@ -85,6 +138,19 @@
   position: absolute;
   top: 65px;
   left: calc(50% - 150px);
+}
+
+@media screen and (max-width:480px) {
+  .first-screen__link {
+    font-size: 25px;
+  }
+
+  .first-screen__link::after {
+    width: 208px;
+    height: 70px;
+    top: 65px;
+    left: calc(50% - 104px);
+  }
 }
 
 
@@ -136,7 +202,7 @@
 /* // 1-ый экран анимация */
 .first-screen__link,
 .first-screen__report-data.container,
-.first-screen__title-first{
+.first-screen__title-first {
   visibility: hidden;
 }
 
@@ -150,6 +216,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

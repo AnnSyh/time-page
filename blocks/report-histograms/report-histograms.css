@@ -4,8 +4,12 @@
   padding-top:30px;
 }
 
-.nowrap {
-  white-space: nowrap;
+
+@media screen and (min-width:768px) {
+
+  .nowrap {
+    white-space: nowrap;
+  }
 }
 
 .report-histograms__col {
