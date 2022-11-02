@@ -1,5 +1,4 @@
 .svg-graf-1-wrapper {
-  border: 1px solid red;
   position: relative;
   margin: 20px 0;
 }
@@ -10,29 +9,27 @@
   left: 0;
 
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3 - 18px));
-  gap: 18px;
+  grid-template-columns: repeat(3, calc(100% / 3 - 20px));
+  gap: 40px;
   height: 100%;
 }
 
 .svg-text-wrap-inner {
-  grid-template-columns: repeat(2, calc(100% / 2 - 18px));
-  gap: 23px;
+  grid-template-columns: repeat(2, calc(100% / 2 - 10px));
+  gap: 20px;
   height: 100%;
   display: grid;
 }
 
 .svg-text {
   writing-mode: vertical-lr;
-  /* height: 100%; */
-  width: 40px;
+  width: 43px;
   text-align: right;
   color: #fff;
   font-size: 16px;
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  /* rotate: 180deg; */
 }
 
 .svg-text-month {
@@ -40,48 +37,54 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
   background: transparent;
-  border: 1px solid red;
-
-  
 }
 
 .svg-text-num {
-  color: red;
   rotate: -90deg;
   font-size: 25px;
   font-weight: bold;
 }
 
 .height-1 {
-  background-color: #2196F3;
+  background-color: #304EFF !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
-  /* max-height: 125px; */
+  height: 125px;
 }
 
 .height-2 {
+  background-color: #04DC73 !important;
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 100px;
 }
 
 .height-11 {
+  background-color: #304EFF !important;
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 180px;
 }
 
 .height-12 {
+  background-color: #04DC73 !important;
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 150px;
 }
 
 .height-21 {
+  background-color: #304EFF !important;
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 90px;
 }
 
 .height-22 {
+  background-color: #04DC73 !important;
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 125px;
 }
 
-.rotate-180 {
+.svg-rotate-180 {
   rotate: 180deg;
+  margin: 10px 0px;
 }
 
 /* ---------------------animation-lr----------------------- */
@@ -128,9 +131,7 @@
 /* --------------animation-bt--------------------------------- */
 
 .animation-bt {
-  width: 30px;
-  /* height: 200px; */
-  background-color: #2196F3;
+  width: 40px;
 
   animation-name: scale-up-hor-right;
   animation-duration: 1s;
