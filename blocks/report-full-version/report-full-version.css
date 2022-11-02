@@ -1,6 +1,6 @@
-/* .report-full-version {
-  border: 1px solid green;
-} */
+.report-full-version {
+  margin-bottom: 90px;
+}
 
 .report-full-version__content {
   display: flex;

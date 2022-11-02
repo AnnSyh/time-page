@@ -5,26 +5,31 @@
   text-align: center;
   flex-direction: column;
   /* gap: 30px; */
-  padding: 15px 0;
+  /* padding: 15px 0; */
   height: 100vh;
   justify-content: space-evenly;
 }
 
+.first-screen__logo {
+  max-width: 350px;
+}
+
 .first-screen__year {
   font-family: 'Formular-Light';
-  font-size: 40px;
+  font-size: 100px;
   text-transform: uppercase;
 }
 
 .first-screen__text {
   font-family: 'Formular';
-  font-size: 16px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
 .first-screen__title-first {
   font-family: 'Formular-Light';
-  font-size: 90px;
+  font-size: 230px;
+  line-height: 230px;
   text-transform: uppercase;
 }
 
@@ -52,11 +57,6 @@
   }
 }
 
-.first-screen__logo {
-  max-width: 180px;
-  /* opacity: 0; */
-}
-
 
 .first-screen__letters {
   color: #000;
@@ -67,24 +67,24 @@
 
 .first-screen__link {
   font-family: 'Formular';
-  font-size: 16px;
+  font-size: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   position: relative;
   display: block;
-  min-height: 60px;
+  min-height: 150px;
 }
 
 .first-screen__link::after {
   content: '';
-  width: 100px;
-  height: 50px;
+  width: 300px;
+  height: 150px;
   background-image: url('../../images/arrow.svg');
   background-repeat: no-repeat;
   position: absolute;
-  top: 35px;
-  left: calc(50% - 50px);
+  top: 65px;
+  left: calc(50% - 150px);
 }
 
 

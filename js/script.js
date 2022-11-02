@@ -152,24 +152,24 @@ window.onload = function () {
     $('.jumbotron-3').paroller();
 
 
-    var income = document.getElementById("income").getContext("2d");
-    var barData = {
-      labels: ["", "", ""],
-      datasets: [
-        {
-          fillColor: "blue",
-          strokeColor: "blue",
-          data: [25, 56, 19]
-        },
-        {
-          fillColor: "green",
-          strokeColor: "green",
-          data: [24, 50, 25]
-        }
+    // var income = document.getElementById("income").getContext("2d");
+    // var barData = {
+    //   labels: ["", "", ""],
+    //   datasets: [
+    //     {
+    //       fillColor: "blue",
+    //       strokeColor: "blue",
+    //       data: [25, 56, 19]
+    //     },
+    //     {
+    //       fillColor: "green",
+    //       strokeColor: "green",
+    //       data: [24, 50, 25]
+    //     }
 
-      ]
-    }
-    new Chart(income).Bar(barData);
+    //   ]
+    // }
+    // new Chart(income).Bar(barData);
 
 
   /* //  test-diagrams */

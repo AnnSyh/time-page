@@ -48,10 +48,15 @@
   transform: rotate(180deg);
 }
 
-small {
+small  {
   font-size: 13px;
   color:#758585;
   display: block;
+  margin: 30px 0;
+}
+
+sup {
+  color:#758585;  
 }
 
 .report-top-line {

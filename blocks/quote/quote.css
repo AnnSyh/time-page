@@ -5,12 +5,13 @@
   position: relative;
   padding-left: 185px;
   padding-top: 50px;
+  margin: 0;
 }
 
 .quote::after {
   content: '';
-  width: 154px;
-  height: 136px;
+  width: 180px;
+  height: 180px;
   position: absolute;
   top: 0px;
   left: 0px;
