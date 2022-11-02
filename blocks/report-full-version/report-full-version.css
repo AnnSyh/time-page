@@ -40,6 +40,16 @@
   color: #04DC73;
 }
 
+.color-pink {
+  color: #E627FF;
+}
+.color-yellow {
+  color: #E0E119;
+}
+.color-gray {
+  color: #cccccc;
+}
+
 .report-full-version__col-1 {
   display: flex;
   flex-direction: column;
