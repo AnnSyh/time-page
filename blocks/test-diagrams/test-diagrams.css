@@ -1,0 +1,26 @@
+.test-diagrams {
+  border: 1px solid red;
+  position: relative;
+}
+
+.test-diagrams__yes,
+.test-diagrams__no {
+  position: absolute;
+  font-size:30px;
+  font-family: 'Formular-Bold', sans-serif;
+}
+
+.test-diagrams__yes {
+  top: 120px;
+  right:0;
+  color: #2a4dff;
+}
+.test-diagrams__no {
+  color: #E627FE;
+  bottom: 120px;
+  left: 0;
+}
+
+.test-diagrams svg {
+  width: 100%;
+}

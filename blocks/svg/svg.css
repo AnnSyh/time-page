@@ -133,6 +133,7 @@
   grid-template-columns: repeat(3, calc(100% / 3 - 15px));
   gap: 45px;
   height: 100%; /**/
+  width: 90%;
 }
 
 .svg-text-wrap-inner {
