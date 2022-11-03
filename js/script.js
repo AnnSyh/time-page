@@ -224,12 +224,13 @@ window.onload = function () {
 
 
   // make any elements animated by class
-  $(".first-screen__img").addClass("wow animate__fadeInUp");
+  // $(".first-screen__img").addClass("wow animate__fadeInUp");
 
   //1-ый экран
   $(".first-screen__title-first").addClass("wow animate__fadeInDown");
   $(".first-screen__report-data.container").addClass("wow animate__fadeInDown");
   $(".first-screen__link").addClass("wow animate__fadeInUp");
+  $(".first-screen__logo-text").addClass("wow animate__fadeDown");
 
   // activate wow.js
   wow = new WOW({

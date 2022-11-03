@@ -4,14 +4,28 @@
   background-color: #304EFF;
   text-align: center;
   flex-direction: column;
-  /* gap: 30px; */
-  /* padding: 15px 0; */
   height: 100vh;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .first-screen__logo {
-  max-width: 350px;
+  width: 350px;
+  position: relative;
+}
+.first-screen__logo-dots {
+  animation: fadeIn 1s ease-in infinite alternate;
+  animation-iteration-count: 5; 
+}
+
+.first-screen__logo-text {
+  visibility: hidden;
+}
+.first-screen__logo-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (max-width:480px) {
@@ -111,13 +125,6 @@
   }
 }
 
-
-.first-screen__letters {
-  color: #000;
-  font-family: 'Formular-Bold';
-  font-size: 50px;
-  text-transform: uppercase;
-}
 
 .first-screen__link {
   font-family: 'Formular';
@@ -227,7 +234,3 @@
   animation-name: none;
 }
 
-.first-screen__letters svg {
-  animation: fadeIn 1s ease-in infinite alternate;
-  animation-iteration-count: 5;
-}
