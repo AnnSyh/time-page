@@ -23,9 +23,12 @@
 
 @media screen and (max-width:480px) {
   .graf-6-col {
-    border: 1px solid green;
+    border: 1px solid blue;
     max-width: 300px;
     margin: auto;
+    width: 70%;
+    padding: 0;
+    margin: 0;
   }
 }
 

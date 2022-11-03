@@ -5,6 +5,12 @@
   height: 320px;
 }
 
+@media screen and (max-width: 480px) {
+  .graf-10-col .graf-text-wrap-inner {
+    width: 70%;
+  }
+}
+
 .graf-10-col .graf-text {
   width: 40px;
 }
