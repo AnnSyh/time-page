@@ -2,7 +2,7 @@
 .svg-graf-3-wrapper {
   position: relative;
   margin: 0 0 80px 0;
-  height: 220px;
+  height: 320px;
   border: 1px solid violet;
   padding: 0 18px;
   /* width: 70%; */
@@ -12,6 +12,14 @@
   .svg-graf-3-wrapper {
     border: 1px solid green;
     max-width: 400px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .svg-graf-3-wrapper {
+    border: 1px solid green;
+    max-width: 300px;
     margin: auto;
   }
 }

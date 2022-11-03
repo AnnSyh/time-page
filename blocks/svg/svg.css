@@ -1,161 +1,4 @@
-.svg-graf-1-wrapper {
-  position: relative;
-  margin: 0 0 80px 0;
-  height: 210px;
-  border: 1px solid red;
-}
-.svg-graf-1-wrapper .svg-text {
-  width: auto;
-}
 
-
-.svg-graf-2-wrapper {
-  position: relative;
-  margin: 0 0 80px 0;
-  height: 330px;
-  border: 1px solid green;
-  padding: 0 18px;
-  width: 70%;
-}
-.svg-graf-2-wrapper .svg-text {
-  width: 43px;
-}
-
-.svg-graf-2-wrapper::after {
-  content: attr(data-info);
-  position: absolute;
-  bottom: -60px;
-  left: 0px;
-  font-size: 14px;
-}
-
-
-
-.svg-text-wrap {
-  position: absolute;
-  left: 0;
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3 - 15px));
-  gap: 45px;
-  height: 100%; /**/
-}
-
-.svg-text-wrap-inner {
-  grid-template-columns: repeat(2, calc(100% / 2 - 10px));
-  height: 100%;
-  display: grid;
-  gap: 20px;
-  position: relative;
-}
-
-.svg-text-wrap-inner:after {
-  content: attr(data-info);
-  position: absolute;
-  bottom: -60px;
-  left: 0px;
-  width: 100%;
-  height: 50px;
-  font-size: 14px;
-  text-align: center;
-  display: flex;
-  align-items: flex-start;
-  padding-top: 10px;
-}
-
-.svg-text-wrap-inner--col-5 {
-  grid-template-columns: repeat(5, calc(100% / 5 - 5px));
-  /* gap: 25px; */
-}
-
-.svg-text-wrap-inner--col-6 {
-  grid-template-columns: repeat(6, calc(100% / 6 - 0px));
-  gap: 0;
-}
-
-.svg-text-wrap-inner--col-61 {
-  grid-template-columns: repeat(6, calc(100% / 6 - 0px));
-  gap: 20px;
-  border: 1px solid green;
-}
-
-.svg-text-wrap-inner--col-61 .svg-text {
-  width: 40px;
-}
-
-/* ---------------------- */
-.svg-text-wrap-inner--col-61 .height-31,
-.svg-text-wrap-inner--col-61 .height-32,
-.svg-text-wrap-inner--col-61 .height-33,
-.svg-text-wrap-inner--col-61 .height-34,
-.svg-text-wrap-inner--col-61 .height-35,
-.svg-text-wrap-inner--col-61 .height-36 {
-  /* background-color: #2a4dff   !important; */
-  background-color: red  !important;
-  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
-}
---------------------
-.svg-text-wrap-inner--col-61 .height-31 {
-  height:60px !important;
-}
-.svg-text-wrap-inner--col-61 .height-32 {
-  height: 70px;
-}
-.svg-text-wrap-inner--col-61 .height-33 {
-  height: 80px;
-}
-.svg-text-wrap-inner--col-61 .height-34 {
-  height: 90px;
-}
-.svg-text-wrap-inner--col-61 .height-35 {
-  height: 100px;
-}
-.svg-text-wrap-inner--col-61 .height-36 {
-  height: 100px;
-}
-/* ---------------------- */
-
-.svg-text {
-  writing-mode: vertical-lr;
-  width: 43px;
-  text-align: right;
-  color: #fff;
-  font-size: 16px;
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-}
-
-.svg-text::after {
-  content: attr(data-info);
-  position: absolute;
-  left: -14px;
-  width: 10px;
-  height: 100%;
-  font-size: 14px;
-  text-align: center;
-  display: flex;
-  align-items: flex-end;
-  color: #000;
-  rotate: -180deg;
-  writing-mode: vertical-rl;
-}
-
-.svg-text-month {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background: transparent;
-}
-
-.svg-text-num {
-  rotate: -90deg;
-  font-size: 25px;
-  font-weight: bold;
-  position: relative;
-  bottom: 5px;
-}
 
 .height-1 {
   background-color: #304EFF !important;
@@ -249,6 +92,200 @@
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 30px;
 }
+/* -------------------------------------- */
+.svg-graf-1-wrapper {
+  position: relative;
+  margin: 0 0 80px 0;
+  height: 210px;
+  border: 1px solid red;
+}
+.svg-graf-1-wrapper .svg-text {
+  width: auto;
+}
+
+
+.svg-graf-2-wrapper {
+  position: relative;
+  margin: 0 0 80px 0;
+  height: 330px;
+  border: 1px solid green;
+  padding: 0 18px;
+  width: 70%;
+}
+.svg-graf-2-wrapper .svg-text {
+  width: 43px;
+}
+
+.svg-graf-2-wrapper::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: -60px;
+  left: 0px;
+  font-size: 14px;
+}
+
+
+
+.svg-text-wrap {
+  position: absolute;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3 - 15px));
+  gap: 45px;
+  height: 100%; /**/
+}
+
+.svg-text-wrap-inner {
+  grid-template-columns: repeat(2, calc(100% / 2 - 10px));
+  height: 100%;
+  display: grid;
+  gap: 20px;
+  position: relative;
+}
+
+.svg-text-wrap-inner:after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: -60px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.svg-text-wrap-inner--col-5 {
+  grid-template-columns: repeat(5, calc(100% / 5 - 5px));
+  /* gap: 25px; */
+}
+
+.svg-text-wrap-inner--col-6 {
+  grid-template-columns: repeat(6, calc(100% / 6 - 0px));
+  gap: 0;
+}
+
+.svg-text-wrap-inner--col-10 {
+  grid-template-columns: repeat(10, calc(100% / 10 - 20px ));
+  gap: 20px;
+  border: 1px solid green;
+  height: 320px;
+}
+
+.svg-text-wrap-inner--col-10 .svg-text {
+  width: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .svg-text-wrap-inner--col-10{
+    gap: 15px;
+    max-width: 510px;
+    margin: auto;
+  }
+  .svg-text-wrap-inner--col-10 .svg-text {
+    width: 30px;
+  }
+  .svg-text-wrap-inner--col-10 .svg-text-num {
+    font-size: 18px;
+  }
+}
+
+/* ---------------------- */
+.tv-viewers-graf .height-1,
+.tv-viewers-graf .height-1,
+.tv-viewers-graf .height-2,
+.tv-viewers-graf .height-3,
+.tv-viewers-graf .height-4,
+.tv-viewers-graf .height-5,
+.tv-viewers-graf .height-6, 
+.tv-viewers-graf .height-7, 
+.tv-viewers-graf .height-8, 
+.tv-viewers-graf .height-9, 
+.tv-viewers-graf .height-10
+{
+  background-color: #2a4dff !important;
+  /* background-color: red  !important; */
+  transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
+}
+--------------------
+.tv-viewers-graf .height-1 {
+  height:90px !important;
+  border:1px solid green  !important;
+}
+.tv-viewers-graf .height-2 {
+  height: 110px;
+}
+.tv-viewers-graf .height-3 {
+  height: 130px;
+}
+.tv-viewers-graf .height-4 {
+  height: 150px;
+}
+.tv-viewers-graf .height-5 {
+  height: 170px;
+}
+.tv-viewers-graf .height-6 {
+  height: 190px;
+}
+.tv-viewers-graf .height-7 {
+  height: 210px;
+}
+.tv-viewers-graf .height-8 {
+  height: 230px;
+}
+.tv-viewers-graf .height-9 {
+  height: 250px;
+}
+.tv-viewers-graf .height-10 {
+  height: 270px;
+}
+/* ---------------------- */
+
+.svg-text {
+  writing-mode: vertical-lr;
+  width: 43px;
+  text-align: right;
+  color: #fff;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.svg-text::after {
+  content: attr(data-info);
+  position: absolute;
+  left: -14px;
+  width: 10px;
+  height: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  color: #000;
+  rotate: -180deg;
+  writing-mode: vertical-rl;
+}
+
+.svg-text-month {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.svg-text-num {
+  rotate: -90deg;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+}
+
 
 .svg-rotate-180 {
   rotate: 180deg;

@@ -12,6 +12,7 @@
 .tv-without-border__col {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .tv-without-border__col .svg-graf-3-wrapper {
@@ -38,6 +39,7 @@
 
   .text-small-bold--22 {
     display: block;
+    text-align: center;
   }
 }
 
