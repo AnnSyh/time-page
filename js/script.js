@@ -71,11 +71,11 @@ window.onload = function () {
   })
 
   //включаем анимацию графиков при прокрутке экрана до соот графика
-  const svgGrafs = document.querySelectorAll(".svg-graf-js");
+  const svgGrafs = document.querySelectorAll(".graf-js");
 
   svgGrafs.forEach(item => {
     var numberTop = item.getBoundingClientRect().top;
-    const colls = item.querySelectorAll('.svg-text-month')
+    const colls = item.querySelectorAll('.graf-text-month')
 
     window.addEventListener('scroll', function onScroll() {
       if (window.pageYOffset > numberTop - window.innerHeight / 2) {
@@ -100,7 +100,7 @@ window.onload = function () {
 
   reportBars.forEach(item => {
     var numberTop = item.getBoundingClientRect().top;
-    // const colls = item.querySelectorAll('.svg-text-month')
+    // const colls = item.querySelectorAll('.graf-text-month')
 
     window.addEventListener('scroll', function onScroll() {
       if (window.pageYOffset > numberTop - window.innerHeight / 2) {
@@ -132,7 +132,7 @@ window.onload = function () {
   })
 
 
-  // const svgGrafs = document.querySelectorAll(".svg-graf-js");
+  // const svgGrafs = document.querySelectorAll(".graf-js");
 
   // svgGrafs.forEach(item => {
 

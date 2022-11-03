@@ -27,6 +27,12 @@
 .report-histograms__col .text-small-bold {
   margin-bottom: 60px;
 }
+@media screen and (max-width:768px) {
+  .report-histograms__col .text-small-bold {
+    margin-bottom: 0;
+  }
+}
+
 
 
 .report-histograms__img {
@@ -69,6 +75,11 @@ small {
   color: #758585;
   display: block;
   margin: 30px 0;
+}
+@media screen and (max-width:768px) {
+  small {
+    margin: 0;
+  } 
 }
 
 
@@ -138,7 +149,7 @@ small {
 
   .report-histograms__col {
     width: 100%;
-    gap: 20px;
+    gap: 40px;
   }
 
   .pr-sm-60px {
@@ -151,6 +162,14 @@ small {
   }
 }
 
+@media screen and (max-width:480px) {
+  .report-histograms {
+    padding: 0;
+  }
+}
+
+
+
 @keyframes render {
   0% {
     stroke-dasharray: 0 100;
@@ -161,7 +180,7 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 800px;
+  max-width: 500px;
 }
 
 

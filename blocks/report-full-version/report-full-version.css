@@ -4,6 +4,12 @@
   gap: 60px;
   margin-bottom: 90px;
 }
+@media screen and (max-width:480px) {
+  .report-full-version { 
+    padding: 0;
+    margin-bottom: 0px;
+  }
+}
 
 .report-full-version__content {
   display: flex;
@@ -16,6 +22,11 @@
 .report-full-version__title {
   font-family: 'Formular';
   font-size: 28px;
+}
+@media screen and (max-width:480px) {
+  .report-full-version__title {
+    font-size: 20px;
+  }
 }
 
 .bg-color-blue {
@@ -70,6 +81,7 @@
   text-decoration: none;
   background-color: #304EFF;
   text-align: center;
+  white-space: nowrap;
 }
 
 .report-list {
@@ -86,10 +98,6 @@
     flex-direction: column;
   }
 
-  /* .report-full-version__title {
-    font-size: 28px;
-  } */
-
   .report-list li {
     font-size: 16px;
     line-height: 30px;
@@ -102,5 +110,11 @@
 
   .report-btn {
     margin: 20px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .report-btn {
+    margin: 10px;
   }
 }

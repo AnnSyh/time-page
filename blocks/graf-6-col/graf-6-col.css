@@ -1,5 +1,10 @@
 
-.svg-graf-3-wrapper {
+.graf-6-col .graf-text-wrap-inner {
+  grid-template-columns: repeat(6, calc(100% / 6 - 0px));
+  gap: 0;
+}
+
+.graf-6-col {
   position: relative;
   margin: 0 0 80px 0;
   height: 320px;
@@ -9,7 +14,7 @@
 }
 
 @media screen and (max-width:1400px) {
-  .svg-graf-3-wrapper {
+  .graf-6-col {
     border: 1px solid green;
     max-width: 400px;
     margin: auto;
@@ -17,7 +22,7 @@
 }
 
 @media screen and (max-width:480px) {
-  .svg-graf-3-wrapper {
+  .graf-6-col {
     border: 1px solid green;
     max-width: 300px;
     margin: auto;
@@ -26,11 +31,11 @@
 
 
 
-.svg-graf-3-wrapper .svg-text {
+.graf-6-col .graf-text {
   width: 100%;
 }
 
-.svg-graf-3-wrapper::after {
+.graf-6-col::after {
   content: attr(data-info);
   position: absolute;
   bottom: -60px;
@@ -38,64 +43,76 @@
   font-size: 14px;
   white-space: nowrap;
 }
+.graf-6-col--last::after{
+  content: none;
+}
 
-.svg-graf-3-wrapper .height-31 {
+@media screen and (max-width:1400px) {
+  .graf-6-col--first::after {
+    content: none;
+  }
+  .graf-6-col--last::after {
+    content: block;
+  }
+}
+
+.graf-6-col .height-1 {
   background-color: #f0f0f2 !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height:30px;
 }
-.svg-graf-3-wrapper .height-32 {
+.graf-6-col .height-2 {
   background-color: #eaedff  !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 40px;
 }
-.svg-graf-3-wrapper .height-33 {
+.graf-6-col .height-3 {
   background-color: #d4dbff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 50px;
 }
-.svg-graf-3-wrapper .height-34 {
+.graf-6-col .height-4 {
   background-color: #bfcaff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 60px;
 }
-.svg-graf-3-wrapper .height-35 {
+.graf-6-col .height-5 {
   background-color: #aab8ff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 70px;
 }
-.svg-graf-3-wrapper .height-36 {
+.graf-6-col .height-6 {
   background-color: #2a4dff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 80px;
 }
 /* ---------------------- */
-.svg-graf-3-wrapper--2 .height-31 {
+.graf-6-col--height-2 .height-1 {
   background-color: #f0f0f2 !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height:20px;
 }
-.svg-graf-3-wrapper--2 .height-32 {
+.graf-6-col--height-2 .height-2 {
   background-color: #eaedff  !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 40px;
 }
-.svg-graf-3-wrapper--2 .height-33 {
+.graf-6-col--height-2 .height-3 {
   background-color: #d4dbff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 80px;
 }
-.svg-graf-3-wrapper--2 .height-34 {
+.graf-6-col--height-2 .height-4 {
   background-color: #bfcaff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 120px;
 }
-.svg-graf-3-wrapper--2 .height-35 {
+.graf-6-col--height-2 .height-5 {
   background-color: #aab8ff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 160px;
 }
-.svg-graf-3-wrapper--2 .height-36 {
+.graf-6-col--height-2 .height-6 {
   background-color: #2a4dff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 200px;
