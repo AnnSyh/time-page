@@ -85,12 +85,47 @@ window.onload = function () {
           console.log('до скролили до графика ');
           // надо увеличить добавить animation-bt к соот столбикам
           colls.forEach(item => { item.classList.add('animation-bt'); })
-    
+
 
           if (true) {// выходим из цикла
             clearInterval(interval);
           }
-          });
+        });
+      }
+    });
+
+  })
+  //включаем анимацию баров(report-bar-js ) при прокрутке экрана до соотбаров(report-bar-js )
+  const reportBars = document.querySelectorAll(".report-bar-js ");
+
+  reportBars.forEach(item => {
+    var numberTop = item.getBoundingClientRect().top;
+    // const colls = item.querySelectorAll('.svg-text-month')
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          const animateDirection = item.dataset.direction
+
+          console.log('до скролили до бара item = ', item);
+          console.log('до скролили до бара animateDirection = ', item.dataset.direction);
+          // надо увеличить добавить animation-bt к соот столбикам
+          if (item.dataset.direction == 'lr') {
+
+            item.classList.add('animation-lr');
+
+          }
+          if (item.dataset.direction == 'rl') {
+
+            item.classList.add('animation-rl');
+          }
+
+
+          if (true) {// выходим из цикла
+            clearInterval(interval);
+          }
+        });
       }
     });
 

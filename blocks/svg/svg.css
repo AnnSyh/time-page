@@ -14,7 +14,8 @@
   margin: 0 0 80px 0;
   height: 330px;
   border: 1px solid green;
-  padding: 0 18px
+  padding: 0 18px;
+  width: 70%;
 }
 .svg-graf-2-wrapper .svg-text {
   width: 43px;
