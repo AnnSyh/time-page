@@ -406,17 +406,19 @@
               раньше не&nbsp;знали и&nbsp;чью продукцию
               не&nbsp;пробовали, %&nbsp;опрошенных
             </div>
+
             <div class='test-diagrams'>
               <div class='canvas'>
-                <svg class='chart' width='400' height='400' viewBox='0 0 50 50'>
-                  <circle class='unit' r='15.9' cx='50%' cy='50%'></circle>
-                  <circle class='unit' r='15.9' cx='50%' cy='50%'></circle>
-              </div>
-              <div class='test-diagrams__yes'>
-                <span class='number-js' data-max='53' data-speed='10'>0</span>%<br>Да
-              </div>
-              <div class='test-diagrams__no'>
-                <span class='number-js' data-max='47' data-speed='10'>0</span>%<br>Нет
+                <svg class='chart' width='300' height='300' viewBox='0 0 40 40'>
+                  <circle class='unit' r='16.5' cx='50%' cy='50%'></circle>
+                  <circle class='unit' r='16.5' cx='50%' cy='50%'></circle>
+                  <div class='test-diagrams__yes'>
+                    <span class='number-js' data-max='53' data-speed='10'>0</span>%<br>Да
+                  </div>
+                  <div class='test-diagrams__no'>
+                    <span class='number-js' data-max='47' data-speed='10'>0</span>%<br>Нет
+                  </div>
+                  </svg>
               </div>
             </div>
             <!-- <img class='report-histograms__img' src='images/gr-4.svg' alt='' /> -->
@@ -506,7 +508,11 @@
         </div>
         <div class='tv-without-border'>
           <div class='tv-without-border__col'>
-            <div class='graf-js graf-6-col graf-6-col--first' data-info='1Источник: Mediascope, TV Index, 2021'>
+            <div 
+            class='graf-js graf-6-col graf-6-col--first' 
+            data-info-before='Все +4'
+            data-info-after='1Источник: Mediascope, TV Index, 2021'
+            >
               <div class='graf-text-wrap-inner'>
                 <div class='graf-text'>
                   <span class='graf-text-month height-1'></span>
@@ -531,7 +537,7 @@
                 </div>
               </div>
             </div>
-            <div class='graf-js graf-6-col graf-6-col--height-2'>
+            <div class='graf-js graf-6-col graf-6-col--height-2' data-info-before='Все 4-11'>
               <div class='graf-text-wrap-inner'>
                 <div class='graf-text'>
                   <span class='graf-text-month height-1'></span>
@@ -556,7 +562,10 @@
                 </div>
               </div>
             </div>
-            <div class='graf-js graf-6-col  graf-6-col--last graf-6-col--height-2'  data-info='2Источник: Mediascope, TV Index, 2021'>
+            <div class='graf-js graf-6-col  graf-6-col--last graf-6-col--height-2'  
+                  data-info-after='2Источник: Mediascope, TV Index, 2021'
+                  data-info-before='Все 25-34'
+            >
               <div class='graf-text-wrap-inner'>
                 <div class='graf-text'>
                   <span class='graf-text-month height-1'></span>

@@ -10,14 +10,15 @@
 }
 
 .test-diagrams__yes {
-  top: 120px;
+  top: 0;
   right:0;
   color: #2a4dff;
+  text-align: right;
 }
 .test-diagrams__no {
-  color: #E627FE;
-  bottom: 120px;
+  bottom: 0;
   left: 0;
+  color: #E627FE;
 }
 
 .test-diagrams svg {

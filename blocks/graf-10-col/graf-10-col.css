@@ -1,13 +1,14 @@
 .graf-10-col .graf-text-wrap-inner {
   grid-template-columns: repeat(10, calc(100% / 10 - 20px ));
   gap: 20px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 320px;
 }
 
 @media screen and (max-width: 480px) {
   .graf-10-col .graf-text-wrap-inner {
     width: 70%;
+    margin-left: 30px;
   }
 }
 

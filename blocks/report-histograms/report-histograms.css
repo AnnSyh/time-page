@@ -180,7 +180,9 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 500px;
+  max-width: 300px;
+  position: relative;
+  margin: auto;
 }
 
 

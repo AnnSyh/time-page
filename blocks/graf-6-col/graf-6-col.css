@@ -8,14 +8,14 @@
   position: relative;
   margin: 0 0 80px 0;
   height: 320px;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   padding: 0 18px;
   /* width: 70%; */
 }
 
 @media screen and (max-width:1400px) {
   .graf-6-col {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     max-width: 400px;
     margin: auto;
   }
@@ -23,12 +23,13 @@
 
 @media screen and (max-width:480px) {
   .graf-6-col {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 300px;
     margin: auto;
     width: 70%;
     padding: 0;
     margin: 0;
+    margin-left: 30px;
   }
 }
 
@@ -38,11 +39,29 @@
   width: 100%;
 }
 
+.graf-6-col::before {
+  content: attr(data-info-before);
+  position: absolute;
+  left: 20px;
+  font-size: 14px;
+  border: 3px solid #2a4dff;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2a4dff;
+  font-family: 'Formular-Bold';
+  font-size: 16px;
+}
 .graf-6-col::after {
-  content: attr(data-info);
+  content: attr( data-info-after);
   position: absolute;
   bottom: -60px;
-  left: 0px;
+  left: 20px;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -60,27 +79,27 @@
 }
 
 .graf-6-col .height-1 {
-  background-color: #f0f0f2 !important;
+  background-color: #eaedff !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height:30px;
 }
 .graf-6-col .height-2 {
-  background-color: #eaedff  !important;
+  background-color: #d4dbff  !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 40px;
 }
 .graf-6-col .height-3 {
-  background-color: #d4dbff   !important;
+  background-color: #bfcaff  !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 50px;
 }
 .graf-6-col .height-4 {
-  background-color: #bfcaff   !important;
+  background-color: #aab8ff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 60px;
 }
 .graf-6-col .height-5 {
-  background-color: #aab8ff   !important;
+  background-color: #95a6ff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 70px;
 }
@@ -91,27 +110,27 @@
 }
 /* ---------------------- */
 .graf-6-col--height-2 .height-1 {
-  background-color: #f0f0f2 !important;
+  background-color: #eaedff !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
-  height:20px;
+  height:40px;
 }
 .graf-6-col--height-2 .height-2 {
-  background-color: #eaedff  !important;
+  background-color: #d4dbff  !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
-  height: 40px;
+  height: 60px;
 }
 .graf-6-col--height-2 .height-3 {
-  background-color: #d4dbff   !important;
+  background-color: #bfcaff  !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 80px;
 }
 .graf-6-col--height-2 .height-4 {
-  background-color: #bfcaff   !important;
+  background-color: #aab8ff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 120px;
 }
 .graf-6-col--height-2 .height-5 {
-  background-color: #aab8ff   !important;
+  background-color: #95a6ff   !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;
   height: 160px;
 }
