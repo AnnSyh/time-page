@@ -47,7 +47,7 @@ window.onload = function () {
     var speed = +item.dataset.speed
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+      if (window.pageYOffset > numberTop - window.innerHeight ) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           item.innerHTML = ++start;
@@ -71,7 +71,7 @@ window.onload = function () {
     const colls = item.querySelectorAll('.graf-text-month')
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+      if (window.pageYOffset > numberTop - window.innerHeight ) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
 
