@@ -1,8 +1,13 @@
 .report-full-version {
   padding: 60px 0;
-  display: grid;
+  /* display: grid; */
   gap: 60px;
   margin-bottom: 90px;
+
+  display: block;
+  width: 100%;
+  border: 1px solid violet;
+  overflow: hidden;
 }
 @media screen and (max-width:480px) {
   .report-full-version { 

@@ -24,6 +24,12 @@
   font-family: 'Formular-Bold', sans-serif;
 }
 
+@media screen and (max-width:480px) {
+  .text-small-bold {
+    font-size: 18px;
+  }
+}
+
 .report-histograms__col .text-small-bold {
   margin-bottom: 60px;
 }

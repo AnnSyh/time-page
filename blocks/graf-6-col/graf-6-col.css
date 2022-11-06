@@ -8,14 +8,11 @@
   position: relative;
   margin: 0 0 80px 0;
   height: 320px;
-  /* border: 1px solid violet; */
   padding: 0 18px;
-  /* width: 70%; */
 }
 
 @media screen and (max-width:1400px) {
   .graf-6-col {
-    /* border: 1px solid green; */
     max-width: 400px;
     margin: auto;
   }
@@ -23,13 +20,11 @@
 
 @media screen and (max-width:480px) {
   .graf-6-col {
-    /* border: 1px solid blue; */
     max-width: 300px;
     margin: auto;
     width: 70%;
     padding: 0;
     margin: 0;
-    margin-left: 30px;
   }
 }
 
