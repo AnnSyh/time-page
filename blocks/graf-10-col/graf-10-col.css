@@ -5,10 +5,17 @@
   height: 320px;
 }
 
-@media screen and (max-width: 480px) {
-  .graf-10-col .graf-text-wrap-inner {
-    width: 70%;
-  }
+.graf-10-col {
+  position: relative;
+}
+
+.graf-10-col::after {
+  content: attr( data-info);
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .graf-10-col .graf-text {
@@ -18,7 +25,7 @@
 @media screen and (max-width: 1400px) {
   .graf-10-col{
     gap: 15px;
-    max-width: 510px;
+    max-width: 100%;
     margin: auto;
   }
   .graf-10-col .graf-text {
@@ -26,6 +33,11 @@
   }
   .graf-10-col .graf-text-num {
     font-size: 18px;
+  }
+
+  .graf-10-col::after {
+    bottom: -30px;
+    left: 0;
   }
 }
 
@@ -77,3 +89,11 @@
   height: 270px;
 }
 /* ---------------------- */
+
+@media screen and (max-width: 380px){
+
+  .graf-10-col .graf-text {
+      width: 20px;
+  }
+
+}

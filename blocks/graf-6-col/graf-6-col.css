@@ -52,7 +52,7 @@
   font-family: 'Formular-Bold';
   font-size: 16px;
 }
-.graf-6-col::after {
+.graf-6-col::after { 
   content: attr( data-info-after);
   position: absolute;
   bottom: -60px;
@@ -61,15 +61,16 @@
   white-space: nowrap;
 }
 .graf-6-col--last::after{
-  content: none;
+  content:  '';
 }
 
 @media screen and (max-width:1400px) {
   .graf-6-col--first::after {
-    content: none;
+    content: '';
   }
-  .graf-6-col--last::after {
-    content: block;
+  .graf-6-col--last::after { 
+    content: attr( data-info-after);
+    bottom: -40px;
   }
 }
 
