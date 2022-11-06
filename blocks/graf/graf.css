@@ -85,9 +85,8 @@
 
 .animation-lr {
   height: 40px;
-  /* background-color: #2196F3; */
-  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s;
-  animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s;
+  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s;
+  animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s;
 }
 
 @-webkit-keyframes scale-up-hor-left {
@@ -126,8 +125,8 @@
 
 .animation-rl {
   /* height: 40px; */
-  -webkit-animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s;
-  animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s;
+  -webkit-animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s;
+  animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s;
 }
 
  @-webkit-keyframes scale-up-hor-right {
@@ -162,11 +161,10 @@
 /* --------------animation-bt--------------------------------- */
 
 .animation-bt {
-  /* width: 40px; */
   animation-name: scale-up-vert-top;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 0s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;

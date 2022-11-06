@@ -62,34 +62,32 @@ window.onload = function () {
   })
 
   //включаем анимацию графиков при прокрутке экрана до соот графика
-  // const svgGrafs = document.querySelectorAll(".graf-js");
+  const svgGrafs = document.querySelectorAll(".graf-js");
   
-  // svgGrafs.forEach(item => {
-  //   var svgGrafNumbers = item.querySelectorAll(".number-js");
-  //   // console.log('svgGrafNumbers = ',svgGrafNumbers);
-  //   var numberTop = item.getBoundingClientRect().top;
-  //   const colls = item.querySelectorAll('.graf-text-month')
+  svgGrafs.forEach(item => {
+    var svgGrafNumbers = item.querySelectorAll(".number-js");
+    // console.log('svgGrafNumbers = ',svgGrafNumbers);
+    var numberTop = item.getBoundingClientRect().top;
+    const colls = item.querySelectorAll('.graf-text-month')
 
-  //   window.addEventListener('scroll', function onScroll() {
-  //     if (window.pageYOffset > numberTop - window.innerHeight / 2) {
-  //       this.removeEventListener('scroll', onScroll);
-  //       var interval = setInterval(function () {
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
 
-  //         console.log('до скролили до графика ');
-  //         //запустим счетчик для цифр над столбцами
-          
+          console.log('до скролили до графика ');
 
-  //         //добавим animation-bt к соот столбикам(увеличим столбцы)
-  //         colls.forEach(item => { item.classList.add('animation-bt'); })
+          //добавим animation-bt к соот столбикам(увеличим столбцы)
+          colls.forEach(item => { item.classList.add('animation-bt'); })
 
 
-  //         if (true) {// выходим из цикла
-  //           clearInterval(interval);
-  //         }
-  //       });
-  //     }
-  //   });
-  // })
+          if (true) {// выходим из цикла
+            clearInterval(interval);
+          }
+        });
+      }
+    });
+  })
 
   //включаем анимацию баров(report-bar-js ) при прокрутке экрана до соотбаров(report-bar-js )
   const reportBars = document.querySelectorAll(".report-bar-js ");
@@ -125,39 +123,10 @@ window.onload = function () {
       }
     });
 
-  })
+  });
 
 
-  // const svgGrafs = document.querySelectorAll(".graf-js");
-
-  // svgGrafs.forEach(item => {
-
-  //   var numberTop = item.getBoundingClientRect().top
-  //   var start = +item.dataset.delay
-  //   var end = +item.dataset.max
-  //   var speed = +item.dataset.speed
-
-  //   window.addEventListener('scroll', function onScroll() {
-  //     if (window.pageYOffset > numberTop - window.innerHeight / 2) {
-  //       this.removeEventListener('scroll', onScroll());
-  //       var interval = setInterval(function () {
-
-  //         console.log('до скролили до графика');
-  //         // надо увеличить delay
-  //         ++start;
-
-  //         if (start == end) { // условие выхода из цикла
-  //           clearInterval(interval);
-  //         }
-  //         // });
-  //       }, speed); // скорость прокрутки
-  //     }
-  //   });
-
-  // })
-
-
-  //перeход по страницам
+  //перeход по страницам(пунктам меню)
   //прокрутка до след пункта + фиксация соот пункта вверху стр 
 
   const sections = document.querySelectorAll("section[id]");
