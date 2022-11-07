@@ -51,7 +51,7 @@ window.onload = function () {
     var speed = +item.dataset.speed
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > startFistGrafAnimation - window.innerHeight ) {
+      if (window.pageYOffset > startFistGrafAnimation - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           collsFirst.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
@@ -59,7 +59,6 @@ window.onload = function () {
           if (start == end) {
             clearInterval(interval);
           }
-          // });
         }, speed); // скорость прокрутки
       }
     });
@@ -74,48 +73,256 @@ window.onload = function () {
 
   console.log('secondGragCounts = ', secondGragCounts);
 
-  secondGragCounts.forEach(item1 => {
-    var start1 = +item1.innerHTML
-    var end1 = +item1.dataset.max
-    var speed1 = +item1.dataset.speed
+  secondGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
 
-    console.log('item1 = ', item1);
+    console.log('item = ', item);
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > startSecondGrafAnimation - window.innerHeight ) {
+      if (window.pageYOffset > startSecondGrafAnimation - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
-          collsSecond.forEach(item1 => { item1.classList.add('animation-bt'); }) //заполняем столбцы
-          item1.innerHTML = ++start1; // увеличиваем счетчик
-          if (start1 == end1) {
+          collsSecond.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
+          item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
             clearInterval(interval);
           }
-          // });
-        }, speed1); // скорость прокрутки
+        }, speed); // скорость прокрутки
       }
     });
 
   })
 
+  //прокрутили до 3-ого счетчика
+  const thirdGrag = document.querySelector(".number-js--3");
+  const startThirdGrafAnimation = document.querySelector('.start-third-graf-animation').getBoundingClientRect().top;
+
+  console.log('thirdGrag item = ', thirdGrag);
+
+  var start = +thirdGrag.innerHTML
+  var end = +thirdGrag.dataset.max
+  var speed = +thirdGrag.dataset.speed
+
+  window.addEventListener('scroll', function onScroll() {
+    if (window.pageYOffset > startThirdGrafAnimation - window.innerHeight) {
+      this.removeEventListener('scroll', onScroll);
+      var interval = setInterval(function () {
+        thirdGrag.innerHTML = ++start; // увеличиваем счетчик
+        if (start == end) {
+          clearInterval(interval);
+        }
+      }, speed); // скорость прокрутки
+    }
+  });
 
 
-  //включаем анимацию баров(report-bar-js ) при прокрутке экрана до соотбаров(report-bar-js )
-  const reportBars = document.querySelectorAll(".report-bar-js ");
 
-  console.log('reportBars = ', reportBars);
+  //прокрутили до 4-ого графика
+  const fourthGrag = document.querySelector(".graf-js--4");
+  const fourthGragCounts = fourthGrag.querySelectorAll(".number-js");
+  const collsFourth = fourthGrag.querySelectorAll('.graf-text-month')
+  const startFourthGrafAnimation = document.querySelector('.start-fourth-graf-animation').getBoundingClientRect().top;
 
-  reportBars.forEach(item => {
-    var numberTop = item.getBoundingClientRect().top;
+  console.log('fourthGragCounts = ', fourthGragCounts);
+
+  fourthGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight) {
+      if (window.pageYOffset > startFourthGrafAnimation - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
-          const animateDirection = item.dataset.direction
+          collsFourth.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
+          item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
+            clearInterval(interval);
+          }
+        }, speed); // скорость прокрутки
+      }
+    });
 
-          console.log('до скролили до бара item = ', item);
-          console.log('до скролили до бара animateDirection = ', item.dataset.direction);
-          // надо увеличить добавить animation-bt к соот столбикам
+  });
+
+  //прокрутили до 5-ого графика
+  const fifthGrag = document.querySelector(".graf-js--5");
+  const fifthGragCounts = fifthGrag.querySelectorAll(".number-js");
+  const startFifthGrafAnimation = document.querySelector('.start-fifth-graf-animation').getBoundingClientRect().top;
+
+  console.log('fifthGragCounts = ', fifthGragCounts);
+
+  fifthGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startFifthGrafAnimation - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
+            clearInterval(interval);
+          }
+        }, speed); // скорость прокрутки
+      }
+    });
+
+  });
+
+  //прокрутили до 6-ого блока
+  const sixthGrag = document.querySelector(".graf-js--6");
+  const sixthGragCounts = sixthGrag.querySelectorAll(".number-js");
+  const collsSixth = sixthGrag.querySelectorAll('.report-bar')
+  const startSixthGrafAnimation = document.querySelector('.start-sixth-graf-animation').getBoundingClientRect().top;
+
+  console.log('sixthGragCounts = ', sixthGragCounts);
+  console.log('collsSixth = ', collsSixth);
+
+  sixthGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startSixthGrafAnimation - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          collsSixth.forEach(item => { item.classList.add('animation-lr'); }) //заполняем столбцы
+          item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
+            clearInterval(interval);
+          }
+        }, speed); // скорость прокрутки
+      }
+    });
+
+  });
+
+
+  //прокрутили до 7-ого блока
+  const seventhGrag = document.querySelector(".graf-js--7");
+  const seventhGragCounts = seventhGrag.querySelectorAll(".number-js");
+  const collsSeventh = seventhGrag.querySelectorAll('.graf-text-month')
+  const startЫeventhGrafAnimation = document.querySelector('.start-seventh-graf-animation').getBoundingClientRect().top;
+
+  console.log('7 collsSeventh = ', collsSeventh);
+  console.log('seventhGragCounts = ', seventhGragCounts);
+
+  seventhGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startЫeventhGrafAnimation - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          collsSeventh.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
+          item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
+            clearInterval(interval);
+          }
+        }, speed); // скорость прокрутки
+      }
+    });
+
+  });
+
+  //прокрутили до 8-ого блока
+  eighthGrag = document.querySelector(".graf-js--8");
+  const eighthGragCounts = eighthGrag.querySelectorAll(".graf-text");
+  const collsEighth = eighthGrag.querySelectorAll('.graf-text-month')
+  const startEighthGrafAnimation = document.querySelector('.start-eighth-graf-animation').getBoundingClientRect().top;
+
+  console.log('8 collseighth = ', collsEighth);
+  console.log('eighthGragCounts = ', eighthGragCounts);
+
+  eighthGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startEighthGrafAnimation - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          collsEighth.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
+          // item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
+            clearInterval(interval);
+          }
+        }, speed); // скорость прокрутки
+      }
+    });
+
+  });
+
+  //прокрутили до 9-ого счетчика (77)
+  const ninthGrag = document.querySelector(".number-js--9");
+  const startNinthGrafAnimation = document.querySelector('.start-ninth-graf-animation').getBoundingClientRect().top;
+
+  console.log('ninthGrag item = ', ninthGrag);
+
+  console.log('9 start = ', +ninthGrag.innerHTML);
+  console.log('9 end = ', +ninthGrag.dataset.max);
+
+  var start9 = +ninthGrag.innerHTML
+  var end9 = +ninthGrag.dataset.max
+  var speed9 = +ninthGrag.dataset.speed
+
+  window.addEventListener('scroll', function onScroll() {
+    if (window.pageYOffset > startNinthGrafAnimation - window.innerHeight) {
+      this.removeEventListener('scroll', onScroll);
+      var interval = setInterval(function () {
+        ninthGrag.innerHTML = ++start9; // увеличиваем счетчик
+        if (start9 == end9) {
+          // if (ninthGrag.innerHTML >= end9) {
+          clearInterval(interval);
+        }
+      }, speed9); // скорость прокрутки
+    }
+  });
+
+
+  //прокрутили до 10-ого графика
+  const tenthGrag = document.querySelector(".graf-js--10");
+  const tenthGragCounts = tenthGrag.querySelectorAll(".number-js");
+  const tenthGragBars = tenthGrag.querySelectorAll(".report-bar-js");
+  const startTenthGrafAnimation = document.querySelector('.start-tenth-graf-animation').getBoundingClientRect().top;
+
+  console.log('tenthGragCounts = ', tenthGragCounts);
+
+  tenthGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startTenthGrafAnimation - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          item.innerHTML = ++start; // увеличиваем счетчик
+
+          if (start == end) {
+            clearInterval(interval);
+          }
+        }, speed); // скорость прокрутки
+      }
+    });
+
+  });
+
+  tenthGragBars.forEach(item => {
+
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startTenthGrafAnimation - window.innerHeight) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+
           if (item.dataset.direction == 'lr') {
 
             item.classList.add('animation-lr');
@@ -126,15 +333,52 @@ window.onload = function () {
             item.classList.add('animation-rl');
           }
 
-
-          if (true) {// выходим из цикла
+          if (true) {
             clearInterval(interval);
           }
-        });
+        }, speed); // скорость прокрутки
       }
     });
 
   });
+
+
+  // //включаем анимацию баров(report-bar-js ) при прокрутке экрана до соотбаров(report-bar-js )
+  // const reportBars = document.querySelectorAll(".report-bar-js ");
+
+  // console.log('reportBars = ', reportBars);
+
+  // reportBars.forEach(item => {
+  //   var numberTop = item.getBoundingClientRect().top;
+
+  //   window.addEventListener('scroll', function onScroll() {
+  //     if (window.pageYOffset > numberTop - window.innerHeight) {
+  //       this.removeEventListener('scroll', onScroll);
+  //       var interval = setInterval(function () {
+  //         const animateDirection = item.dataset.direction
+
+  //         console.log('до скролили до бара item = ', item);
+  //         console.log('до скролили до бара animateDirection = ', item.dataset.direction);
+  // // надо увеличить добавить animation-bt к соот столбикам
+  // if (item.dataset.direction == 'lr') {
+
+  //   item.classList.add('animation-lr');
+
+  // }
+  // if (item.dataset.direction == 'rl') {
+
+  //   item.classList.add('animation-rl');
+  // }
+
+
+  //         if (true) {// выходим из цикла
+  //           clearInterval(interval);
+  //         }
+  //       });
+  //     }
+  //   });
+
+  // });
 
 
   //перeход по страницам(пунктам меню)
