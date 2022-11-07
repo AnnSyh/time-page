@@ -36,68 +36,79 @@ window.onload = function () {
     }
   })
 
-  //включаем анимацию счетчиков при прокрутке экрана до соот сетчика
-  const pageCounts = document.querySelectorAll(".number-js");
+  //включаем анимацию счетчиков при прокрутке экрана до соот графика
+  //прокрутили до 1-ого графика
+  // const firstGrag = document.querySelector(".graf-js--1");
+  // const firstGragCounts = firstGrag.querySelectorAll(".number-js");
+  // const collsFirst = firstGrag.querySelectorAll('.graf-text-month')
+  // const startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
 
-  pageCounts.forEach(item => {
+  // console.log('firstGragCounts = ', firstGragCounts);
 
-    var numberTop = item.getBoundingClientRect().top
-    var start = +item.innerHTML
-    var end = +item.dataset.max
-    var speed = +item.dataset.speed
+  // firstGragCounts.forEach(item => {
+  //   var start = +item.innerHTML
+  //   var end = +item.dataset.max
+  //   var speed = +item.dataset.speed
+
+  //   window.addEventListener('scroll', function onScroll() {
+  //     if (window.pageYOffset > startFistGrafAnimation - window.innerHeight ) {
+  //       this.removeEventListener('scroll', onScroll);
+  //       var interval = setInterval(function () {
+  //         collsFirst.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
+  //         item.innerHTML = ++start; // увеличиваем счетчик
+  //         if (start == end) {
+  //           clearInterval(interval);
+  //         }
+  //         // });
+  //       }, speed); // скорость прокрутки
+  //     }
+  //   });
+
+  // });
+
+  //прокрутили до 2-ого графика
+  const secondGrag = document.querySelector(".graf-js--2");
+  const secondGragCounts = secondGrag.querySelectorAll(".number-js");
+  const collsSecond = secondGrag.querySelectorAll('.graf-text-month')
+  const startSecondGrafAnimation = document.querySelector('.start-second-graf-animation').getBoundingClientRect().top;
+
+  console.log('secondGragCounts = ', secondGragCounts);
+
+  secondGragCounts.forEach(item1 => {
+    var start1 = +item1.innerHTML
+    var end1 = +item1.dataset.max
+    var speed1 = +item1.dataset.speed
+
+    console.log('item1 = ', item1);
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight ) {
+      if (window.pageYOffset > startSecondGrafAnimation - window.innerHeight ) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
-          item.innerHTML = ++start;
-          if (start == end) {
+          collsSecond.forEach(item1 => { item1.classList.add('animation-bt'); }) //заполняем столбцы
+          item1.innerHTML = ++start1; // увеличиваем счетчик
+          if (start1 == end1) {
             clearInterval(interval);
           }
           // });
-        }, speed); // скорость прокрутки
+        }, speed1); // скорость прокрутки
       }
     });
 
   })
 
-  //включаем анимацию графиков при прокрутке экрана до соот графика
-  const svgGrafs = document.querySelectorAll(".graf-js");
-  
-  svgGrafs.forEach(item => {
-    var svgGrafNumbers = item.querySelectorAll(".number-js");
-    // console.log('svgGrafNumbers = ',svgGrafNumbers);
-    var numberTop = item.getBoundingClientRect().top;
-    const colls = item.querySelectorAll('.graf-text-month')
 
-    window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight ) {
-        this.removeEventListener('scroll', onScroll);
-        var interval = setInterval(function () {
-
-          console.log('до скролили до графика ');
-
-          //добавим animation-bt к соот столбикам(увеличим столбцы)
-          colls.forEach(item => { item.classList.add('animation-bt'); })
-
-
-          if (true) {// выходим из цикла
-            clearInterval(interval);
-          }
-        });
-      }
-    });
-  })
 
   //включаем анимацию баров(report-bar-js ) при прокрутке экрана до соотбаров(report-bar-js )
   const reportBars = document.querySelectorAll(".report-bar-js ");
 
+  console.log('reportBars = ', reportBars);
+
   reportBars.forEach(item => {
     var numberTop = item.getBoundingClientRect().top;
-    // const colls = item.querySelectorAll('.graf-text-month')
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+      if (window.pageYOffset > numberTop - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           const animateDirection = item.dataset.direction
