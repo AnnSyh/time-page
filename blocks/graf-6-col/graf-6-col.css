@@ -57,8 +57,10 @@
   position: absolute;
   bottom: -60px;
   left: 20px;
-  font-size: 14px;
   white-space: nowrap;
+
+  font-size: 13px;
+  color: #758585;
 }
 .graf-6-col--last::after{
   content:  '';

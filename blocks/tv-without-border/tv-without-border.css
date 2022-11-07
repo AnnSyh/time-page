@@ -9,6 +9,10 @@
   flex: 1;
 }
 
+.tv-without-border__header {
+margin-bottom: 60px;
+}
+
 .tv-without-border__col {
   display: flex;
   gap: 10px;

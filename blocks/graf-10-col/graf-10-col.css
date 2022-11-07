@@ -12,10 +12,12 @@
 .graf-10-col::after {
   content: attr( data-info);
   position: absolute;
-  bottom: 15px;
+  bottom: -60px;
   left: 0;
-  font-size: 14px;
   white-space: nowrap;
+
+  font-size: 13px;
+  color: #758585;
 }
 
 .graf-10-col .graf-text {
@@ -36,8 +38,11 @@
   }
 
   .graf-10-col::after {
-    bottom: -30px;
+    bottom: -52px;
     left: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: break-spaces;
   }
 }
 

@@ -18,7 +18,19 @@
   position: absolute;
   bottom: -60px;
   left: 0px;
-  font-size: 14px;
+
+  font-size: 13px;
+  color: #758585;
+}
+
+.graf-5-col::before {
+  content: attr(data-info-1);
+  position: absolute;
+  bottom: -78px;
+  left: 0px;
+
+  font-size: 13px;
+  color: #758585;
 }
 
 /* ------------------.graf-5-col--left ------------------------- */
