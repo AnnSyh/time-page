@@ -38,33 +38,33 @@ window.onload = function () {
 
   //включаем анимацию счетчиков при прокрутке экрана до соот графика
   //прокрутили до 1-ого графика
-  // const firstGrag = document.querySelector(".graf-js--1");
-  // const firstGragCounts = firstGrag.querySelectorAll(".number-js");
-  // const collsFirst = firstGrag.querySelectorAll('.graf-text-month')
-  // const startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
+  const firstGrag = document.querySelector(".graf-js--1");
+  const firstGragCounts = firstGrag.querySelectorAll(".number-js");
+  const collsFirst = firstGrag.querySelectorAll('.graf-text-month')
+  const startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
 
-  // console.log('firstGragCounts = ', firstGragCounts);
+  console.log('firstGragCounts = ', firstGragCounts);
 
-  // firstGragCounts.forEach(item => {
-  //   var start = +item.innerHTML
-  //   var end = +item.dataset.max
-  //   var speed = +item.dataset.speed
+  firstGragCounts.forEach(item => {
+    var start = +item.innerHTML
+    var end = +item.dataset.max
+    var speed = +item.dataset.speed
 
-  //   window.addEventListener('scroll', function onScroll() {
-  //     if (window.pageYOffset > startFistGrafAnimation - window.innerHeight ) {
-  //       this.removeEventListener('scroll', onScroll);
-  //       var interval = setInterval(function () {
-  //         collsFirst.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
-  //         item.innerHTML = ++start; // увеличиваем счетчик
-  //         if (start == end) {
-  //           clearInterval(interval);
-  //         }
-  //         // });
-  //       }, speed); // скорость прокрутки
-  //     }
-  //   });
+    window.addEventListener('scroll', function onScroll() {
+      if (window.pageYOffset > startFistGrafAnimation - window.innerHeight ) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function () {
+          collsFirst.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
+          item.innerHTML = ++start; // увеличиваем счетчик
+          if (start == end) {
+            clearInterval(interval);
+          }
+          // });
+        }, speed); // скорость прокрутки
+      }
+    });
 
-  // });
+  });
 
   //прокрутили до 2-ого графика
   const secondGrag = document.querySelector(".graf-js--2");
