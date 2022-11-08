@@ -11,6 +11,15 @@
   gap: 20px;
 }
 
+.graf-double-col-wrapper .height-1,
+.graf-double-col-wrapper .height-2,
+.graf-double-col-wrapper .height-11,
+.graf-double-col-wrapper .height-12,
+.graf-double-col-wrapper .height-21,
+.graf-double-col-wrapper .height-22 {
+  opacity: 0;
+}
+
 .graf-double-col-wrapper .height-1 {
   background-color: #304EFF !important;
   transition: height 1s cubic-bezier(0, 0, 1, 1) 500ms;

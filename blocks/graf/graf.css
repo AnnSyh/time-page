@@ -114,6 +114,7 @@
   /* height: 40px; */
   -webkit-animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s;
   animation: scale-up-hor-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s;
+  opacity: 1;
 }
 
  @-webkit-keyframes scale-up-hor-right {
@@ -155,6 +156,7 @@
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
+  opacity: 1 !important;
 }
 
 @keyframes scale-up-vert-top {
