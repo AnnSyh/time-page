@@ -162,7 +162,11 @@ window.onload = function () {
   //прокрутили до 5-ого графика
   const fifthGrag = document.querySelector(".graf-js--5");
   const fifthGragCounts = fifthGrag.querySelectorAll(".number-js");
+  const fifthGragUnit = fifthGrag.querySelectorAll(".unit");
+  const fifthGragTestDiagrams = fifthGrag.querySelectorAll(".test-diagrams-items");
   const startFifthGrafAnimation = document.querySelector('.start-fifth-graf-animation').getBoundingClientRect().top;
+
+  // console.log('fifthGragUnit = ', fifthGragUnit);
 
   fifthGragCounts.forEach(item => {
     var start = +item.innerHTML
@@ -174,6 +178,11 @@ window.onload = function () {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           item.innerHTML = ++start; // увеличиваем счетчик
+
+          // убираю прозрачность у счетчиков
+          fifthGragUnit.forEach(item => { item.classList.add('opacity-1'); })
+          fifthGragTestDiagrams.forEach(item => { item.classList.add('opacity-1'); })
+
           if (start == end) {
             clearInterval(interval);
           }
