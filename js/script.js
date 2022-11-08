@@ -47,19 +47,12 @@ window.onload = function () {
   //в этом случе нач анимации startFistGrafAnimation должно поменяться
   // на document.querySelector('.mobile-start-first-graf-animation')
 
-  // $(window).resize(function() {
   if ($(window).width() < 768) {
-    console.log('Less than 768');
     var startFistGrafAnimation = document.querySelector('.mobile-start-first-graf-animation').getBoundingClientRect().top;
   }
   else {
-    console.log('More than 768');
     var startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
   }
-  // });
-
-
-  console.log('firstGragCounts = ', firstGragCounts);
 
   firstGragCounts.forEach(item => {
     var start = +item.innerHTML
@@ -94,14 +87,10 @@ window.onload = function () {
   const collsSecond = secondGrag.querySelectorAll('.graf-text-month')
   const startSecondGrafAnimation = document.querySelector('.start-second-graf-animation').getBoundingClientRect().top;
 
-  console.log('secondGragCounts = ', secondGragCounts);
-
   secondGragCounts.forEach(item => {
     var start = +item.innerHTML
     var end = +item.dataset.max
     var speed = +item.dataset.speed
-
-    console.log('item = ', item);
 
     window.addEventListener('scroll', function onScroll() {
       if (window.pageYOffset > startSecondGrafAnimation - window.innerHeight) {
@@ -124,8 +113,6 @@ window.onload = function () {
   const thirdGrag = document.querySelector(".number-js--3");
   const startThirdGrafAnimation = document.querySelector('.start-third-graf-animation').getBoundingClientRect().top;
 
-  console.log('thirdGrag item = ', thirdGrag);
-
   var start = +thirdGrag.innerHTML
   var end = +thirdGrag.dataset.max
   var speed = +thirdGrag.dataset.speed
@@ -142,16 +129,12 @@ window.onload = function () {
     }
   });
 
-
-
   //прокрутили до 4-ого графика
   const fourthGrag = document.querySelector(".graf-js--4");
   const fourthGragCounts = fourthGrag.querySelectorAll(".number-js");
   const fourthGragTextNums = fourthGrag.querySelectorAll(".graf-text-num");
   const collsFourth = fourthGrag.querySelectorAll('.graf-text-month')
   const startFourthGrafAnimation = document.querySelector('.start-fourth-graf-animation').getBoundingClientRect().top;
-
-  console.log('fourthGragCounts = ', fourthGragCounts);
 
   fourthGragCounts.forEach(item => {
     var start = +item.innerHTML
@@ -181,8 +164,6 @@ window.onload = function () {
   const fifthGragCounts = fifthGrag.querySelectorAll(".number-js");
   const startFifthGrafAnimation = document.querySelector('.start-fifth-graf-animation').getBoundingClientRect().top;
 
-  console.log('fifthGragCounts = ', fifthGragCounts);
-
   fifthGragCounts.forEach(item => {
     var start = +item.innerHTML
     var end = +item.dataset.max
@@ -208,9 +189,6 @@ window.onload = function () {
   const collsSixth = sixthGrag.querySelectorAll('.report-bar')
   const startSixthGrafAnimation = document.querySelector('.start-sixth-graf-animation').getBoundingClientRect().top;
 
-  console.log('sixthGragCounts = ', sixthGragCounts);
-  console.log('collsSixth = ', collsSixth);
-
   sixthGragCounts.forEach(item => {
     var start = +item.innerHTML
     var end = +item.dataset.max
@@ -231,7 +209,6 @@ window.onload = function () {
 
   });
 
-
   //прокрутили до 7-ого блока
   const seventhGrag = document.querySelector(".graf-js--7");
   const seventhGragCounts = seventhGrag.querySelectorAll(".number-js");
@@ -242,20 +219,12 @@ window.onload = function () {
   //в этом случе нач анимации startFistGrafAnimation должно поменяться
   // на document.querySelector('.mobile-start-first-graf-animation')
 
-  // $(window).resize(function() {
   if ($(window).width() < 768) {
-    console.log('graf-js--7 Less than 768');
     var startSeventhGrafAnimation = document.querySelector('.mobile-start-seventh-graf-animation').getBoundingClientRect().top;
   }
   else {
-    console.log('graf-js--7 More than 768');
     var startSeventhGrafAnimation = document.querySelector('.start-seventh-graf-animation').getBoundingClientRect().top;
   }
-  // });
-
-
-  console.log('7 collsSeventh = ', collsSeventh);
-  console.log('seventhGragCounts = ', seventhGragCounts);
 
   seventhGragCounts.forEach(item => {
     var start = +item.innerHTML
@@ -286,9 +255,6 @@ window.onload = function () {
   const collsEighth = eighthGrag.querySelectorAll('.graf-text-month')
   const startEighthGrafAnimation = document.querySelector('.start-eighth-graf-animation').getBoundingClientRect().top;
 
-  console.log('8 collseighth = ', collsEighth);
-  console.log('eighthGragCounts = ', eighthGragCounts);
-
   eighthGragCounts.forEach(item => {
     var start = +item.innerHTML
     var end = +item.dataset.max
@@ -315,11 +281,6 @@ window.onload = function () {
   const ninthGrag = document.querySelector(".number-js--9");
   const startNinthGrafAnimation = document.querySelector('.start-ninth-graf-animation').getBoundingClientRect().top;
 
-  console.log('ninthGrag item = ', ninthGrag);
-
-  console.log('9 start = ', +ninthGrag.innerHTML);
-  console.log('9 end = ', +ninthGrag.dataset.max);
-
   var start9 = +ninthGrag.innerHTML
   var end9 = +ninthGrag.dataset.max
   var speed9 = +ninthGrag.dataset.speed
@@ -344,8 +305,6 @@ window.onload = function () {
   const tenthGragTextNums = tenthGrag.querySelectorAll(".text-bold");
   const tenthGragBars = tenthGrag.querySelectorAll(".report-bar-js");
   const startTenthGrafAnimation = document.querySelector('.start-tenth-graf-animation').getBoundingClientRect().top;
-
-  console.log('tenthGragTextNums = ', tenthGragTextNums);
 
   tenthGragCounts.forEach(item => {
     var start = +item.innerHTML
@@ -465,6 +424,4 @@ window.onload = function () {
   $('.jumbotron-2').paroller();
   $('.jumbotron-3').paroller();
 
-
 }
-
