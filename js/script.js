@@ -319,9 +319,10 @@ window.onload = function () {
     var start = +item.innerHTML
     var end = +item.dataset.max
     var speed = +item.dataset.speed
+    const windowConst = 300
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > startTenthGrafAnimation - window.innerHeight) {
+      if (window.pageYOffset > startTenthGrafAnimation - window.innerHeight - windowConst) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           item.innerHTML = ++start; // увеличиваем счетчик
