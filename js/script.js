@@ -40,6 +40,7 @@ window.onload = function () {
   //прокрутили до 1-ого графика
   const firstGrag = document.querySelector(".graf-js--1");
   const firstGragCounts = firstGrag.querySelectorAll(".number-js");
+  const firstGragTextNums = firstGrag.querySelectorAll(".graf-text-num");
   const collsFirst = firstGrag.querySelectorAll('.graf-text-month')
 
   //условие на случай окна меньше 768px
@@ -47,14 +48,14 @@ window.onload = function () {
   // на document.querySelector('.mobile-start-first-graf-animation')
 
   // $(window).resize(function() {
-    if ($(window).width() < 768) {
-       console.log('Less than 768');
-       var startFistGrafAnimation = document.querySelector('.mobile-start-first-graf-animation').getBoundingClientRect().top;
-    }
-   else {
+  if ($(window).width() < 768) {
+    console.log('Less than 768');
+    var startFistGrafAnimation = document.querySelector('.mobile-start-first-graf-animation').getBoundingClientRect().top;
+  }
+  else {
     console.log('More than 768');
     var startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
-   }
+  }
   // });
 
 
@@ -72,6 +73,8 @@ window.onload = function () {
         var interval = setInterval(function () {
           collsFirst.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
           item.innerHTML = ++start; // увеличиваем счетчик
+          // убираю прозрачность у счетчиков
+          firstGragTextNums.forEach(item => { item.classList.add('opacity-1'); })
           if (start == end) {
             clearInterval(interval);
           }
@@ -79,14 +82,15 @@ window.onload = function () {
       }
 
 
-
     });
 
   });
 
+
   //прокрутили до 2-ого графика
   const secondGrag = document.querySelector(".graf-js--2");
   const secondGragCounts = secondGrag.querySelectorAll(".number-js");
+  const secondGragTextNums = secondGrag.querySelectorAll(".graf-text-num");
   const collsSecond = secondGrag.querySelectorAll('.graf-text-month')
   const startSecondGrafAnimation = document.querySelector('.start-second-graf-animation').getBoundingClientRect().top;
 
@@ -105,6 +109,8 @@ window.onload = function () {
         var interval = setInterval(function () {
           collsSecond.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
           item.innerHTML = ++start; // увеличиваем счетчик
+          // убираю прозрачность у счетчиков
+          secondGragTextNums.forEach(item => { item.classList.add('opacity-1'); })
           if (start == end) {
             clearInterval(interval);
           }
@@ -141,6 +147,7 @@ window.onload = function () {
   //прокрутили до 4-ого графика
   const fourthGrag = document.querySelector(".graf-js--4");
   const fourthGragCounts = fourthGrag.querySelectorAll(".number-js");
+  const fourthGragTextNums = fourthGrag.querySelectorAll(".graf-text-num");
   const collsFourth = fourthGrag.querySelectorAll('.graf-text-month')
   const startFourthGrafAnimation = document.querySelector('.start-fourth-graf-animation').getBoundingClientRect().top;
 
@@ -157,6 +164,9 @@ window.onload = function () {
         var interval = setInterval(function () {
           collsFourth.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
           item.innerHTML = ++start; // увеличиваем счетчик
+          // убираю прозрачность у счетчиков
+          fourthGragTextNums.forEach(item => { item.classList.add('opacity-1'); })
+
           if (start == end) {
             clearInterval(interval);
           }
@@ -225,6 +235,7 @@ window.onload = function () {
   //прокрутили до 7-ого блока
   const seventhGrag = document.querySelector(".graf-js--7");
   const seventhGragCounts = seventhGrag.querySelectorAll(".number-js");
+  const seventhGragTextNums = seventhGrag.querySelectorAll(".graf-text-num");
   const collsSeventh = seventhGrag.querySelectorAll('.graf-text-month')
 
   //условие на случай окна меньше 768px
@@ -232,15 +243,15 @@ window.onload = function () {
   // на document.querySelector('.mobile-start-first-graf-animation')
 
   // $(window).resize(function() {
-    if ($(window).width() < 768) {
-      console.log('graf-js--7 Less than 768');
-      var startSeventhGrafAnimation = document.querySelector('.mobile-start-seventh-graf-animation').getBoundingClientRect().top;
-   }
-  else {
-   console.log('graf-js--7 More than 768');
-   var startSeventhGrafAnimation = document.querySelector('.start-seventh-graf-animation').getBoundingClientRect().top;
+  if ($(window).width() < 768) {
+    console.log('graf-js--7 Less than 768');
+    var startSeventhGrafAnimation = document.querySelector('.mobile-start-seventh-graf-animation').getBoundingClientRect().top;
   }
- // });
+  else {
+    console.log('graf-js--7 More than 768');
+    var startSeventhGrafAnimation = document.querySelector('.start-seventh-graf-animation').getBoundingClientRect().top;
+  }
+  // });
 
 
   console.log('7 collsSeventh = ', collsSeventh);
@@ -257,6 +268,8 @@ window.onload = function () {
         var interval = setInterval(function () {
           collsSeventh.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
           item.innerHTML = ++start; // увеличиваем счетчик
+          // убираю прозрачность у счетчиков
+          seventhGragTextNums.forEach(item => { item.classList.add('opacity-1'); })
           if (start == end) {
             clearInterval(interval);
           }
@@ -269,6 +282,7 @@ window.onload = function () {
   //прокрутили до 8-ого блока
   eighthGrag = document.querySelector(".graf-js--8");
   const eighthGragCounts = eighthGrag.querySelectorAll(".graf-text");
+  const eighthGragTextNums = eighthGrag.querySelectorAll(".graf-text-num");
   const collsEighth = eighthGrag.querySelectorAll('.graf-text-month')
   const startEighthGrafAnimation = document.querySelector('.start-eighth-graf-animation').getBoundingClientRect().top;
 
@@ -286,6 +300,8 @@ window.onload = function () {
         var interval = setInterval(function () {
           collsEighth.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
           // item.innerHTML = ++start; // увеличиваем счетчик
+          // убираю прозрачность у счетчиков
+          eighthGragTextNums.forEach(item => { item.classList.add('opacity-1'); })
           if (start == end) {
             clearInterval(interval);
           }
