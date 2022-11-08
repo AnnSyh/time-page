@@ -341,10 +341,11 @@ window.onload = function () {
   //прокрутили до 10-ого графика
   const tenthGrag = document.querySelector(".graf-js--10");
   const tenthGragCounts = tenthGrag.querySelectorAll(".number-js");
+  const tenthGragTextNums = tenthGrag.querySelectorAll(".text-bold");
   const tenthGragBars = tenthGrag.querySelectorAll(".report-bar-js");
   const startTenthGrafAnimation = document.querySelector('.start-tenth-graf-animation').getBoundingClientRect().top;
 
-  console.log('tenthGragCounts = ', tenthGragCounts);
+  console.log('tenthGragTextNums = ', tenthGragTextNums);
 
   tenthGragCounts.forEach(item => {
     var start = +item.innerHTML
@@ -356,6 +357,8 @@ window.onload = function () {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           item.innerHTML = ++start; // увеличиваем счетчик
+          // убираю прозрачность у счетчиков
+          tenthGragTextNums.forEach(item => { item.classList.add('opacity-1'); })
 
           if (start == end) {
             clearInterval(interval);
@@ -372,17 +375,7 @@ window.onload = function () {
       if (window.pageYOffset > startTenthGrafAnimation - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
-
-          if (item.dataset.direction == 'lr') {
-
-            item.classList.add('animation-lr');
-
-          }
-          if (item.dataset.direction == 'rl') {
-
-            item.classList.add('animation-rl');
-          }
-
+          item.classList.add('animation-rl');
           if (true) {
             clearInterval(interval);
           }
@@ -391,45 +384,6 @@ window.onload = function () {
     });
 
   });
-
-
-  // //включаем анимацию баров(report-bar-js ) при прокрутке экрана до соотбаров(report-bar-js )
-  // const reportBars = document.querySelectorAll(".report-bar-js ");
-
-  // console.log('reportBars = ', reportBars);
-
-  // reportBars.forEach(item => {
-  //   var numberTop = item.getBoundingClientRect().top;
-
-  //   window.addEventListener('scroll', function onScroll() {
-  //     if (window.pageYOffset > numberTop - window.innerHeight) {
-  //       this.removeEventListener('scroll', onScroll);
-  //       var interval = setInterval(function () {
-  //         const animateDirection = item.dataset.direction
-
-  //         console.log('до скролили до бара item = ', item);
-  //         console.log('до скролили до бара animateDirection = ', item.dataset.direction);
-  // // надо увеличить добавить animation-bt к соот столбикам
-  // if (item.dataset.direction == 'lr') {
-
-  //   item.classList.add('animation-lr');
-
-  // }
-  // if (item.dataset.direction == 'rl') {
-
-  //   item.classList.add('animation-rl');
-  // }
-
-
-  //         if (true) {// выходим из цикла
-  //           clearInterval(interval);
-  //         }
-  //       });
-  //     }
-  //   });
-
-  // });
-
 
   //перeход по страницам(пунктам меню)
   //прокрутка до след пункта + фиксация соот пункта вверху стр 
@@ -489,9 +443,7 @@ window.onload = function () {
     });
   }
 
-
   window.addEventListener("scroll", navHighlighter);
-
 
   // make any elements animated by class
   // $(".first-screen__img").addClass("wow animate__fadeInUp");
@@ -512,43 +464,6 @@ window.onload = function () {
   $('.jumbotron-1').paroller();
   $('.jumbotron-2').paroller();
   $('.jumbotron-3').paroller();
-
-
-  // var income = document.getElementById("income").getContext("2d");
-  // var barData = {
-  //   labels: ["", "", ""],
-  //   datasets: [
-  //     {
-  //       fillColor: "blue",
-  //       strokeColor: "blue",
-  //       data: [25, 56, 19]
-  //     },
-  //     {
-  //       fillColor: "green",
-  //       strokeColor: "green",
-  //       data: [24, 50, 25]
-  //     }
-
-  //   ]
-  // }
-  // new Chart(income).Bar(barData);
-
-
-  /* //  test-diagrams */
-  // let captionsList = document.querySelectorAll('.caption-item');
-  // let unitsList = document.querySelectorAll('.unit');
-
-  // captionsList.forEach(function (item, index) {
-  //   item.addEventListener('mouseover', function () {
-  //     unitsList[index].classList.add('hovered');
-  //   });
-
-  //   item.addEventListener('mouseout', function () {
-  //     unitsList[index].classList.remove('hovered');
-  //   });
-  // });
-
-
 
 
 }
