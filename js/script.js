@@ -41,7 +41,22 @@ window.onload = function () {
   const firstGrag = document.querySelector(".graf-js--1");
   const firstGragCounts = firstGrag.querySelectorAll(".number-js");
   const collsFirst = firstGrag.querySelectorAll('.graf-text-month')
-  const startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
+
+  //условие на случай окна меньше 768px
+  //в этом случе нач анимации startFistGrafAnimation должно поменяться
+  // на document.querySelector('.mobile-start-first-graf-animation')
+
+  // $(window).resize(function() {
+    if ($(window).width() < 768) {
+       console.log('Less than 768');
+       var startFistGrafAnimation = document.querySelector('.mobile-start-first-graf-animation').getBoundingClientRect().top;
+    }
+   else {
+    console.log('More than 768');
+    var startFistGrafAnimation = document.querySelector('.start-first-graf-animation').getBoundingClientRect().top;
+   }
+  // });
+
 
   console.log('firstGragCounts = ', firstGragCounts);
 
@@ -51,6 +66,7 @@ window.onload = function () {
     var speed = +item.dataset.speed
 
     window.addEventListener('scroll', function onScroll() {
+
       if (window.pageYOffset > startFistGrafAnimation - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
@@ -61,6 +77,9 @@ window.onload = function () {
           }
         }, speed); // скорость прокрутки
       }
+
+
+
     });
 
   });
@@ -207,7 +226,22 @@ window.onload = function () {
   const seventhGrag = document.querySelector(".graf-js--7");
   const seventhGragCounts = seventhGrag.querySelectorAll(".number-js");
   const collsSeventh = seventhGrag.querySelectorAll('.graf-text-month')
-  const startЫeventhGrafAnimation = document.querySelector('.start-seventh-graf-animation').getBoundingClientRect().top;
+
+  //условие на случай окна меньше 768px
+  //в этом случе нач анимации startFistGrafAnimation должно поменяться
+  // на document.querySelector('.mobile-start-first-graf-animation')
+
+  // $(window).resize(function() {
+    if ($(window).width() < 768) {
+      console.log('graf-js--7 Less than 768');
+      var startSeventhGrafAnimation = document.querySelector('.mobile-start-seventh-graf-animation').getBoundingClientRect().top;
+   }
+  else {
+   console.log('graf-js--7 More than 768');
+   var startSeventhGrafAnimation = document.querySelector('.start-seventh-graf-animation').getBoundingClientRect().top;
+  }
+ // });
+
 
   console.log('7 collsSeventh = ', collsSeventh);
   console.log('seventhGragCounts = ', seventhGragCounts);
@@ -218,7 +252,7 @@ window.onload = function () {
     var speed = +item.dataset.speed
 
     window.addEventListener('scroll', function onScroll() {
-      if (window.pageYOffset > startЫeventhGrafAnimation - window.innerHeight) {
+      if (window.pageYOffset > startSeventhGrafAnimation - window.innerHeight) {
         this.removeEventListener('scroll', onScroll);
         var interval = setInterval(function () {
           collsSeventh.forEach(item => { item.classList.add('animation-bt'); }) //заполняем столбцы
