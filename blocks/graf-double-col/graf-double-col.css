@@ -9,7 +9,20 @@
 .graf-double-col-wrapper .graf-text-wrap-inner {
   grid-template-columns: repeat(2, calc(100% / 2 - 10px));
   gap: 20px;
+  position: relative;
 }
+
+.graf-double-col-wrapper .graf-text-wrap-inner::before {
+  content: attr(data-info);
+  position: absolute;
+  bottom: -52px;
+  left: 0px;
+  font-size: 13px;
+  color: #758585;
+  width: 100%;
+  text-align: center;
+}
+
 
 .graf-double-col-wrapper .height-1,
 .graf-double-col-wrapper .height-2,
