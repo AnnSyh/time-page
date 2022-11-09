@@ -198,14 +198,24 @@ window.onload = function () {
 
         if (doughnutChart) {
           new Chart(doughnutChart, {
+
+            options: {
+              tooltips: {
+                mode: false,
+                callbacks: {
+                  title: function() {},
+                  label: function() {}
+                }
+              }
+            },
+
             type: 'doughnut',
 
             // The data for our dataset
             data: {
-              labels: [
-                '53% Да',
-                '47% Нет'
-              ],
+              labels:{
+                render: 'label'
+              },
               datasets: [{
                 label: 'My First Dataset',
                 data: [25, 22],
