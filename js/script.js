@@ -194,6 +194,77 @@ window.onload = function () {
 
   });
 
+  //---------------построение диаграмы-----------
+  Chart.defaults.elements.arc.borderWidth = 0;
+  Chart.defaults.elements.arc.roundedCornersFor = 0;
+  Chart.defaults.elements.arc.hoverBorderColor = 'white';
+  
+  Chart.defaults.datasets.doughnut.cutout = '96%';
+
+  var doughnutChart = document.getElementById('doughnutChart');
+
+  console.log('doughnutChart = ', doughnutChart);
+
+if(doughnutChart) {
+    new Chart(doughnutChart, {
+        type: 'doughnut',
+    
+        // The data for our dataset
+        data: {
+            labels: [
+                '53% Да',
+                '47% Нет'
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [25, 22],
+                backgroundColor: [
+                  '#2A4EFE',
+                  '#E627FE'
+                ]
+            }]
+        },
+        plugins: [
+          {
+              afterUpdate: function(chart) {
+                  if (chart.options.elements.arc.roundedCornersFor !== undefined) {
+                      var arc = chart.getDatasetMeta(0).data[chart.options.elements.arc.roundedCornersFor];
+                      
+                      arc.round = {
+                          x: (chart.chartArea.left + chart.chartArea.right) / 2,
+                          y: (chart.chartArea.top + chart.chartArea.bottom) / 2,
+                          radius: (arc.outerRadius + arc.innerRadius) / 2,
+                          thickness: (arc.outerRadius - arc.innerRadius) / 2,
+                          backgroundColor: arc.options.backgroundColor
+                      }
+                  }
+              },
+              // afterDraw: (chart) => {
+              //     if (chart.options.elements.arc.roundedCornersFor !== undefined) {
+              //         var {ctx, canvas} = chart;
+              //         var arc = chart.getDatasetMeta(0).data[chart.options.elements.arc.roundedCornersFor];
+
+              //         var startAngle = Math.PI / 2 - arc.startAngle;
+              //         var endAngle = Math.PI / 2 - arc.endAngle;
+      
+              //         ctx.save();
+              //         ctx.translate(arc.round.x, arc.round.y);
+              //         ctx.fillStyle = arc.round.backgroundColor;
+              //         ctx.beginPath();
+              //         ctx.arc(arc.round.radius * Math.sin(startAngle), arc.round.radius * Math.cos(startAngle), arc.round.thickness, 0, 2 * Math.PI);
+              //         ctx.arc(arc.round.radius * Math.sin(endAngle), arc.round.radius * Math.cos(endAngle), arc.round.thickness, 0, 2 * Math.PI);
+              //         ctx.closePath();
+              //         ctx.fill();
+              //         ctx.restore();
+              //     }
+              // }
+          }
+      ]
+
+    });
+}
+  //--------/--построение диаграмы
+
   //прокрутили до 6-ого блока
   const sixthGrag = document.querySelector(".graf-js--6");
   const sixthGragCounts = sixthGrag.querySelectorAll(".number-js");
