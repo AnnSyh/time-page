@@ -194,17 +194,15 @@ window.onload = function () {
         Chart.defaults.elements.arc.roundedCornersFor = 0;
         Chart.defaults.elements.arc.hoverBorderColor = 'white';
         Chart.defaults.datasets.doughnut.cutout = '96%';
+
         var doughnutChart = document.getElementById('doughnutChart');
 
         if (doughnutChart) {
           new Chart(doughnutChart, {
-
             options: {
-              tooltips: {
-                mode: false,
-                callbacks: {
-                  title: function() {},
-                  label: function() {}
+              plugins: {
+                tooltip: {
+                  enabled: false
                 }
               }
             },
@@ -213,11 +211,10 @@ window.onload = function () {
 
             // The data for our dataset
             data: {
-              labels:{
+              labels: {
                 render: 'label'
               },
               datasets: [{
-                label: 'My First Dataset',
                 data: [25, 22],
                 backgroundColor: [
                   '#2A4EFE',
